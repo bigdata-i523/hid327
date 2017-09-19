@@ -8,7 +8,6 @@
 
 # Theory
 
-* 08/22/17 - 08/23/17 Read and watched all videso in the Theory Introduction section
 * 09/17/17 Went through course materials for Section 3.1 through 3.1.1.10.
 
 # Practice
