@@ -8,9 +8,9 @@
 
 ```
 owner:
-    hid: 000
-    name: Gregor von Laszewski
-    url: https://github.com/bigdata-i523/sample-hid000
+    hid: 327
+    name: Marks, Paul
+    url: https://github.com/bigdata-i523/hid327
 ```
 
 # Paper 1
