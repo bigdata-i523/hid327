@@ -9,6 +9,7 @@
 # Theory
 
 * 09/17/17 Went through course materials for Section 3.1 through 3.1.1.10.
+* 09/21/17 Completed remaining course materials for Section 3.1.
 
 # Practice
 
@@ -23,3 +24,4 @@
 * 09/17/17 Installed Tex Live from tug.org
 * 09/18/17 Registered with ShareLatex to use it for Paper1.
 * 09/18/17 Installed jabref
+* 09/24/17 Researched paper and began to assemble outline, text.
