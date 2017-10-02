@@ -5,17 +5,20 @@
 * 09/01/17 Read through Section 2 Writing Track
 * 09/06/07 Voted in Polls, took survey.
 * 09/18/17 Attended 6pm class, viewed video from 9/11/17 class.
+* 09/25/17 Attended 6PM class via phone due to travel.
+* 09/27/17 Attended 5PM class.  Asked questions about getting help with LaTex, format of paper.
 
 # Theory
 
 * 09/17/17 Went through course materials for Section 3.1 through 3.1.1.10.
 * 09/21/17 Completed remaining course materials for Section 3.1.
+* 09/25/17 Completed course materials for Section 3.2.1 and 3.2.2
+* 09/26/17 Completed remaining course materials for Section 3.2
 
 # Practice
 
 * 08/27/17 Bought Raspberry PI on Amazon.  Delivered on 9/5/17.
 * 09/17/17 Began to learn Python from LearnPython.org.  Took several of the beginning courses/lessons to learn the basic functions in Phython.
-
 
 # Writing
 
@@ -25,3 +28,6 @@
 * 09/18/17 Registered with ShareLatex to use it for Paper1.
 * 09/18/17 Installed jabref
 * 09/24/17 Researched paper and began to assemble outline, text.
+* 09/28/17 Focused on writing paper 1.  Completed most of the paper.
+* 10/01/17 Continued writing paper 1.  Most of the context is complete, but having issues with LaTex.
+* 10/01/17 Submitting questions to TAs about Paper1.  Bibliography is not showing (therefore cannot cite references, but have tagged to cite) and the graphic is skipping a page before it displays for some reason.
