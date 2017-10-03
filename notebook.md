@@ -7,6 +7,7 @@
 * 09/18/17 Attended 6pm class, viewed video from 9/11/17 class.
 * 09/25/17 Attended 6PM class via phone due to travel.
 * 09/27/17 Attended 5PM class.  Asked questions about getting help with LaTex, format of paper.
+* 10/02/17 Attended 6PM class.  Listened to hear issues others have had.  Asked question, but my connection was breaking up and it was hard for others to hear.  I will us my phone for the voice the next time and computer for the video.
 
 # Theory
 
@@ -14,6 +15,7 @@
 * 09/21/17 Completed remaining course materials for Section 3.1.
 * 09/25/17 Completed course materials for Section 3.2.1 and 3.2.2
 * 09/26/17 Completed remaining course materials for Section 3.2
+* 10/02/17 Started to view the materials for Section 3.3.  Also viewed materials specific to Healthcare which is the topic of my paper. 
 
 # Practice
 
@@ -31,3 +33,5 @@
 * 09/28/17 Focused on writing paper 1.  Completed most of the paper.
 * 10/01/17 Continued writing paper 1.  Most of the context is complete, but having issues with LaTex.
 * 10/01/17 Submitting questions to TAs about Paper1.  Bibliography is not showing (therefore cannot cite references, but have tagged to cite) and the graphic is skipping a page before it displays for some reason.
+* 10/02/17 Updated paper to include proper works cited per feedback.
+* 10/03/17 Worked on paper to get it to 99% done and am asking for a quick review by TAs to make sure I do not have something wrong in formatting or citing.
