@@ -17,14 +17,13 @@ paper1:
    - Paul Marks
    hid:
    - 327
-   title: Waste in Healthcare
-   abstract: The cost of healthcare includes the cost of inefficient services. 
-       While this could include topics such as misdiagnosis, less effective treatment
-       treatment plans, and more efficient use of types of services (emergency
-       room vs. immediate care vs. telemedicine) the purpose of this paper
-       is the cost of Fraud, Waste, and Abuse (FWA) within the system.
-       The estimate for what percentage of cost are attributable to FWA
-       can range from 10-15%.
+   title: Fraud, Waste, and Abuse in United States Healthcare
+   abstract: The cost of healthcare includes the cost of inefficient services.  While 
+this could include topics such as misdiagnosis, less effective treatment plans, 
+and more efficient use of types of services (emergency room vs. immediate care 
+vs. telemedicine) the purpose of this paper is the cost of Fraud, Waste, and 
+Abuse (FWA) within the system.  The question is "How can we use big data analysis to 
+help minimize the loss due to FWA and thus optimize the money spent on healthcare.
    url: https://github.com/bigdata-i523/hid327/paper1/report.pdf
    type: latex
    status: 90%
