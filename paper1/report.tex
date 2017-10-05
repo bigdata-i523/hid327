@@ -31,8 +31,8 @@
 The cost of healthcare includes the loss of billions of dollars due to Fraud, 
 Waste, and Abuse (FWA).  Many of the schemes to commit FWA are very intricate and 
 require the analysis of many data sources simultaneously.  The question answered 
-here is "How can we use big data analysis to help minimize these costs and thus 
-optimize the money spent on healthcare."
+here is ``How can we use big data analysis to help minimize these costs and thus 
+optimize the money spent on healthcare.''
 \end{abstract}
 
 \keywords{i523, hid327, Fraud, Waste, Abuse, Healthcare, Medicare, Medicaid, 
@@ -47,12 +47,12 @@ FWA is an issue that affects everyone in the U.S. since healthcare services are
 leveraged by everyone at some point and the costs for those services include the 
 money lost to FWA.  The three components of FWA are varying degrees of 
 culpability.  The Centers for Medicare and Medicaid Services (CMS) in part defines 
-fraud as "knowingly and willfully executing, or attempting to execute, a scheme or 
-artifice to defraud any health care benefit program", Waste as "overusing services, 
-or other practices that, directly or indirectly, result in unnecessary costs", and 
-Abuse as "involves payment for items or services when there is not legal entitlement 
+fraud as ``knowingly and willfully executing, or attempting to execute, a scheme or 
+artifice to defraud any health care benefit program'', Waste as ``overusing services, 
+or other practices that, directly or indirectly, result in unnecessary costs'', and 
+Abuse as ``involves payment for items or services when there is not legal entitlement 
 to that payment and the provider has not knowingly and/or intentionally 
-misrepresented facts"\cite{MLNFWA}.  While the percentage of cost attributable to 
+misrepresented facts''.\cite{MLNFWA}  While the percentage of cost attributable to 
 FWA can vary from insurer to insurer, Medicare estimates that 11 percent of its 
 payments for Original Medicare are improper primarily due to FWA.\cite{FY2016HHSFR}  
 In combination these cost the United States healthcare system 80 billion 
@@ -82,13 +82,13 @@ while working with a patient.  In order to fully utilize advances in technology,
 multiple sources of information must be brought together.  Sources include claims 
 (current and historic), clinical, provider, geospatial, and other sources of 
 information.  This allows for data analytics to take a deeper look into not only a 
-single participant, but others who may be related to that participant.  "If Provider 
+single participant, but others who may be related to that participant.  ``If Provider 
 A is involved in improper billing, it is not uncommon for other providers with which 
 they associate to also be engaged in bad behavior.  Thus, many payers will work to 
 analyze connected providers.  Information on corporate ownership, billing and 
 management companies, social media interactions of physicians and staff can reveal 
 whether other physicians, pharmacies, radiology centers, home infusion agencies, etc. 
-are engaged in a broader pattern of referral and collusion."\cite{RevCycle}
+are engaged in a broader pattern of referral and collusion.''\cite{RevCycle}
 
 The problem for big data to solve is the size of all this data and how to process it 
 fast enough.  Using CMS as an example, being a government entity much of their data is 
@@ -107,18 +107,18 @@ Hadoop, analysts could divide the different sources of information into data lak
 looking at each source separately, and then combining the results.  Table 
 \ref{fig:TypesofFraud} on page \pageref{fig:TypesofFraud} shows sources of information 
 and what level of FWA they are generally related to.  The highest level combines sets 
-of data.  "Level 7 combines all previous data views and concerns all fraud that is part 
+of data.  ``Level 7 combines all previous data views and concerns all fraud that is part 
 of criminal networks which involve many different beneficiaries and/or providers. This 
 much larger data view, spanning billions of claims in the case of Medicaid, is the most 
 rich, delivering the ability to perform complex network analysis that could detect 
 intricate conspiracies. However, performance of analysis here will be much lower than 
-in previous levels."\cite{THORNTON20131252} 
+in previous levels.''\cite{THORNTON20131252} 
 
 While there are simple cases of fraud which follow 
 a typical known pattern, this is only a portion of the problem.  Fraud schemes 
 change and can involve many different entities which may not seem to be related on the 
 surface.  The more data which can be combined and analyzed, the more fraud that can be 
-found.  "Much of the FWA that plague health care payers is the result of organized, 
+found.  ``Much of the FWA that plague health care payers is the result of organized, 
 sophisticated and collusive activities among providers and between providers and patients. 
 Social network analysis can help identify relationships, links and hidden patterns of 
 information sharing and interactions within potentially fraudulent clusters, including:
@@ -127,17 +127,17 @@ information sharing and interactions within potentially fraudulent clusters, inc
   \item Links between recipients, businesses, assets and relatives and associates;
   \item Links between licensed and non-licensed and sanctioned providers; and
   \item Inappropriate relationships between patients, providers, employees, suppliers 
-  and partners"\cite{LexisNexis}
+  and partners''\cite{LexisNexis}
 \end{itemize}
 In order to keep up with organized fraud activities, there must be a dedicated practice 
 of data analytics which is ever evolving. 
 
 Traditionally programs have been written to look for specific sets of circumstances.  
 Leveraging existing knowledge about the data and using it to look for specific patterns 
-is known as supervised in big data terms.  "There are several supervised fraud detection 
+is known as supervised in big data terms.  ``There are several supervised fraud detection 
 methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy 
 Logic. NNs and decision trees are the most popular fraud detection methods because of 
-their high tolerance of noisy data and huge data set handling."  There are also 
+their high tolerance of noisy data and huge data set handling.''\cite{Ghuse}  There are also 
 unsupervised methods in which data is fed into the system without preexisting notions 
 of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find 
 relationships and groupings of related information, find clusters of what could be 
@@ -145,12 +145,12 @@ considered normal, and determine where the outliers are.
 
 Because unsupervisord methods only identify outliers, applying unsupervised methods to 
 healthcare data will require that the outliers will then have to be verified as FWA or 
-acceptable patterns.  "Patrick McIntyre, SVP of Health Care Analytics at Anthem, one 
+acceptable patterns.  ``Patrick McIntyre, SVP of Health Care Analytics at Anthem, one 
 of the country's biggest payers, credits machine learning and big data with their 
-ability to "identify potentially fraudulent or wasteful claims on a daily basis." The 
+ability to ``identify potentially fraudulent or wasteful claims on a daily basis." The 
 algorithms are run at the same time as claims are batch processed, so questionable 
 claims are immediately identified, flagged and sent to the clinical coding experts for 
-review."\cite{Datameer}  This greatly increases the ability to fight FWA by having the 
+review.''\cite{Datameer}  This greatly increases the ability to fight FWA by having the 
 machine pinpoint where to look in all the data available to the reviewer.  Suddenly the task 
 of finding fraud is not as daunting.  By leveraging both of these techniques FWA can be 
 discovered at an accelerated pace.  The number of models the system knows will grow over 
@@ -159,10 +159,10 @@ time as more data is fed into it and more patters are discovered and verified.
 
 \subsection{Future uses of Big Data Analytics}
 
-Currently there is still a certain amount of honor built into healthcare.  "The system's 
+Currently there is still a certain amount of honor built into healthcare.  ``The system's 
 inherent structure of trust enables both simple billings errors and illicit actors to hide 
 in the shadows of the murky deep as overpayments quietly siphon money away from legitimate 
-care."\cite{RevCycle}  If a claim is submitted by a valid entity, using the correct process, 
+care.''\cite{RevCycle}  If a claim is submitted by a valid entity, using the correct process, 
 and everything is in order then it is most likely paid.  For many claims this is done 
 without any specific proof of the services being provided.  With more and more healthcare 
 information being digitized this may not be the case in the future.  X-rays, lab tests, 
@@ -183,14 +183,14 @@ Historically the payers of most healthcare claims, insurers, have not had the
 ability to examine actual evidence that a service has taken place on a broad scale.  (It is done 
 manually on a specific case or audit basis.)  Through the use of advances in big data and combining 
 current and new data stores such as electronic health records into the payment process a difference 
-can be made in the amount of money lost to FWA in healthcare.  "By combining identity and entity resolution, 
+can be made in the amount of money lost to FWA in healthcare.  ``By combining identity and entity resolution, 
 rules-based claim and clinical review, complex linking analysis and predictive analytics into a 
 seamless workflow, we will come closer to migrating an integrated pre-pay fraud solution to a real 
 risk control environment with the potential to eliminate billions of dollars in improper payments due 
 to FWA. This is not just a health care imperative, but a national economic imperative that must be 
 addressed immediately. The analytics exist. It is time for those analytics to be implemented and the 
 hard choices that enable that implementation to be made to insure that we remain at the forefront of 
-quality care for all Americans."\cite{LexisNexis}
+quality care for all Americans.''\cite{LexisNexis}
 
 
 \section{Conclusions}
