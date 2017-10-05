@@ -29,34 +29,97 @@ Using Big Data to help optimize our Healthcare spend}
 
 
 \begin{abstract}
-The cost of healthcare includes the cost of inefficient services.  While this could include topics such as misdiagnosis, less effective treatment plans, and more efficient use of types of services (emergency room vs. immediate care vs. telemedicine) the purpose of this paper is the cost of Fraud, Waste, and Abuse (FWA) within the system.  The estimate for what percentage of cost are attributable to FWA can vary from insurer to insurer.  Medicare estimates that 11 percent of its payments for Original Medicare are improper primarily due to FWA.\cite{FY2016HHSFR}.   The question is "How can we use big data analysis to help minimize these costs and thus optimize the money spent on healthcare."
+The cost of healthcare includes the cost of inefficient services.  While this 
+could include topics such as misdiagnosis, less effective treatment plans, 
+and more efficient use of types of services (emergency room vs. immediate care 
+vs. telemedicine) the purpose of this paper is the cost of Fraud, Waste, and 
+Abuse (FWA) within the system.  The estimate for what percentage of cost are 
+attributable to FWA can vary from insurer to insurer.  Medicare estimates that 
+11 percent of its payments for Original Medicare are improper primarily due to 
+FWA.\cite{FY2016HHSFR}.   The question is "How can we use big data analysis to 
+help minimize these costs and thus optimize the money spent on healthcare."
 \end{abstract}
 
-\keywords{i523, hid327, Fraud, Waste, Abuse, Healthcare, Medicare, Medicaid, FWA, health insurance}
+\keywords{i523, hid327, Fraud, Waste, Abuse, Healthcare, Medicare, Medicaid, 
+FWA, health insurance}
 
 
 \maketitle
 
 \section{Introduction}
 
-The definition of verb waste includes "to spend or use carelessly"\cite{WasteDef}.  When money spent on healthcare goes to FWA, it is money being spent carelessly.  FWA is all of our issue since healthcare services are leveraged by everyone at some point and the costs for those services include the money lost to FWA.  The three components of Fraud, Waste and Abuse are varying degrees of culpability of waste.  The Centers for Medicare and Medicaid Services (CMS) in part defines fraud as "is knowingly and willfully executing, or attempting to execute, a scheme or artifice to defraud any health care benefit program", Waste as "overusing services, or other practices that, directly or indirectly, result in unnecessary costs", and Abuse as "involves payment for items or services when there is not legal entitlement to that payment and the provider has not knowingly and/or intentionally misrepresented facts"\cite{MLNFWA}.  In combination these cost the United States healthcare system 80 billion dollars\cite{HFMA} annually.  
-Advances in big data technology can help reduce these losses.  Big data offers the ability to look at data in real time to determine if a claim is legitimate or not.  Historically, due to the amount of data involved, this type of analysis would have to happen after the claims have been paid with specific models targeting specific schemes to identify FWA.  Big data can help lower the cost of health-care in the United States by identifying FWA claims and stopping payment before it occurs. 
+The definition of verb waste includes "to spend or use carelessly"\cite{WasteDef}.  
+When money spent on healthcare goes to FWA, it is money being spent carelessly.  
+FWA is all of our issue since healthcare services are leveraged by everyone at some 
+point and the costs for those services include the money lost to FWA.  The three 
+components of Fraud, Waste and Abuse are varying degrees of culpability of waste.  
+The Centers for Medicare and Medicaid Services (CMS) in part defines fraud as "is 
+knowingly and willfully executing, or attempting to execute, a scheme or artifice 
+to defraud any health care benefit program", Waste as "overusing services, or other 
+practices that, directly or indirectly, result in unnecessary costs", and Abuse as 
+"involves payment for items or services when there is not legal entitlement to that 
+payment and the provider has not knowingly and/or intentionally misrepresented 
+facts"\cite{MLNFWA}.  In combination these cost the United States healthcare system 
+80 billion dollars\cite{HFMA} annually.  
+Advances in big data technology can help reduce these losses.  Big data offers the 
+ability to look at data in real time to determine if a claim is legitimate or not.  
+Historically, due to the amount of data involved, this type of analysis would have to 
+happen after the claims have been paid with specific models targeting specific 
+schemes to identify FWA.  Big data can help lower the cost of health-care in the 
+United States by identifying FWA claims and stopping payment before it occurs. 
 
 
 \section{Healthcare Fraud, Waste, and Abuse Environment}
 
-It is easy to understand the problem FWA poses.  Healthcare funds are of limited quantity.  Insurance helps to spread the cost among groups of people, but does not provide limitless funds.  As costs increase, so do premiums or direct payments for health-care.  In order for as many people to be able to have access to healthcare costs have to be managed.  There are many ideas for helping to provide affordable healthcare, but there is much discussion and disagreement on exactly how to do that.  Reducing costs by eliminating as much FWA as possible is one solution that everyone, except for those participating in and profiting from FWA schemes, can agree on.
+It is easy to understand the problem FWA poses.  Healthcare funds are of limited 
+quantity.  Insurance helps to spread the cost among groups of people, but does not 
+provide limitless funds.  As costs increase, so do premiums or direct payments for 
+health-care.  In order for as many people to be able to have access to healthcare 
+costs have to be managed.  There are many ideas for helping to provide affordable 
+healthcare, but there is much discussion and disagreement on exactly how to do that.  
+Reducing costs by eliminating as much FWA as possible is one solution that everyone, 
+except for those participating in and profiting from FWA schemes, can agree on.
 
-Data to fight FWA is not just the information gathered by a doctor or other provider while working with a patient.  In order to fully utilize advances in technology, multiple sources of information must be brought together.  Sources include claims (current and historic), clinical, provider, geospatial, and other sources of information.  This allows for data analytics to take a deeper look into not only a single participant, but others who may be related to that participant.  "If Provider A is involved in improper billing, it is not uncommon for other providers with which they associate to also be engaged in bad behavior.  Thus, many payers will work to analyze connected providers.  Information on corporate ownership, billing and management companies, social media interactions of physicians and staff can reveal whether other physicians, pharmacies, radiology centers, home infusion agencies, etc. are engaged in a broader pattern of referral and collusion."\cite{RevCycle}
+Data to fight FWA is not just the information gathered by a doctor or other provider 
+while working with a patient.  In order to fully utilize advances in technology, 
+multiple sources of information must be brought together.  Sources include claims 
+(current and historic), clinical, provider, geospatial, and other sources of 
+information.  This allows for data analytics to take a deeper look into not only a 
+single participant, but others who may be related to that participant.  "If Provider 
+A is involved in improper billing, it is not uncommon for other providers with which 
+they associate to also be engaged in bad behavior.  Thus, many payers will work to 
+analyze connected providers.  Information on corporate ownership, billing and 
+management companies, social media interactions of physicians and staff can reveal 
+whether other physicians, pharmacies, radiology centers, home infusion agencies, etc. 
+are engaged in a broader pattern of referral and collusion."\cite{RevCycle}
 
-The problem for big data to solve is the deluge of information and how to process it fast enough.  Using CMS as an example, being a government entity much of their data is available publicly, it is easy to get an idea of the amount of data.  Medicare processed 1.2 billion claims in 2014, covering 53.8 million beneficiaries, with 6,142 million hospitals, and 1,173,802 non-institutional providers\cite{2015CMSStatistics}.  Payments are generally made within a specific timeframe depending on the insurer and their agreement with providers.  This time includes all the normal steps to verify and process a claim so the time available to examine the data for FWA is very limited.
+The problem for big data to solve is the deluge of information and how to process it 
+fast enough.  Using CMS as an example, being a government entity much of their data is 
+available publicly, it is easy to get an idea of the amount of data.  Medicare processed 
+1.2 billion claims in 2014, covering 53.8 million beneficiaries, with 6,142 million 
+hospitals, and 1,173,802 non-institutional providers\cite{2015CMSStatistics}.  Payments 
+are generally made within a specific timeframe depending on the insurer and their 
+agreement with providers.  This time includes all the normal steps to verify and process 
+a claim so the time available to examine the data for FWA is very limited.
 
 
 \subsection{Big Data Techniques for FWA}
 
-So how can big data be used to approach this issue?  Leveraging big data tools such as Hadoop analysts could divide the different sources of information into data lakes, looking at each source separately, and then combining the results.  Table \ref{fig:TypesofFraud} on page \pageref{fig:TypesofFraud} shows sources of information and what level of FWA they are generally related to.  The highest level combines sets of data.  "Level 7 combines all previous data views and concerns all fraud that is part of criminal networks which involve many different beneficiaries and/or providers. This much larger data view, spanning billions of claims in the case of Medicaid, is the most rich, delivering the ability to perform complex network analysis that could detect intricate conspiracies. However, performance of analysis here will be much lower than in previous levels."\cite{THORNTON20131252} 
+So how can big data be used to approach this issue?  Leveraging big data tools such as 
+Hadoop analysts could divide the different sources of information into data lakes, 
+looking at each source separately, and then combining the results.  Table 
+\ref{fig:TypesofFraud} on page \pageref{fig:TypesofFraud} shows sources of information 
+and what level of FWA they are generally related to.  The highest level combines sets 
+of data.  "Level 7 combines all previous data views and concerns all fraud that is part 
+of criminal networks which involve many different beneficiaries and/or providers. This 
+much larger data view, spanning billions of claims in the case of Medicaid, is the most 
+rich, delivering the ability to perform complex network analysis that could detect 
+intricate conspiracies. However, performance of analysis here will be much lower than 
+in previous levels."\cite{THORNTON20131252} 
 
-Traditionally programs are written to look for specific sets of circumstances.  Leveraging existing knowledge about the data and using it to look for specific patterns is known as supervised in big data terms.  "There are several supervised fraud detection methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy Logic. NNs and decision trees are the most popular fraud detection methods because of their high tolerance of noisy data and huge data set handling."  There are also unsupervised methods in which data is fed into the system without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find relationships and groupings of related information, find clusters of what could be considered normal, and determine where the outliers are.  
+Traditionally programs are written to look for specific sets of circumstances.  
+Leveraging existing knowledge about the data and using it to look for specific patterns 
+is known as supervised in big data terms.  "There are several supervised fraud detection methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy Logic. NNs and decision trees are the most popular fraud detection methods because of their high tolerance of noisy data and huge data set handling."  There are also unsupervised methods in which data is fed into the system without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find relationships and groupings of related information, find clusters of what could be considered normal, and determine where the outliers are.  
 
 Applying unsupervised methods to healthcare data will identify patterns that will then have to be verified as FWA or acceptable patterns.  "Patrick McIntyre, SVP of Health Care Analytics at Anthem, one of the country's biggest payers, credits machine learning and big data with their ability to "identify potentially fraudulent or wasteful claims on a daily basis." The algorithms are run at the same time as claims are batch processed, so questionable claims are immediately identified, flagged and sent to the clinical coding experts for review."\cite{Datameer}  This greatly increases the ability to fight FWA by having the machine pinpoint where to look in all the data available.  Suddenly the task of finding fraud is not as daunting.  By leveraging both of these techniques FWA can be discovered at an accelerated pace.  The number of models the system knows will grow over time as more data is fed into it and more patters are discovered and verified.
 
