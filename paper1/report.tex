@@ -119,35 +119,98 @@ in previous levels."\cite{THORNTON20131252}
 
 Traditionally programs are written to look for specific sets of circumstances.  
 Leveraging existing knowledge about the data and using it to look for specific patterns 
-is known as supervised in big data terms.  "There are several supervised fraud detection methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy Logic. NNs and decision trees are the most popular fraud detection methods because of their high tolerance of noisy data and huge data set handling."  There are also unsupervised methods in which data is fed into the system without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find relationships and groupings of related information, find clusters of what could be considered normal, and determine where the outliers are.  
+is known as supervised in big data terms.  "There are several supervised fraud detection 
+methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy 
+Logic. NNs and decision trees are the most popular fraud detection methods because of 
+their high tolerance of noisy data and huge data set handling."  There are also 
+unsupervised methods in which data is fed into the system without preexisting notions 
+of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find 
+relationships and groupings of related information, find clusters of what could be 
+considered normal, and determine where the outliers are.  
 
-Applying unsupervised methods to healthcare data will identify patterns that will then have to be verified as FWA or acceptable patterns.  "Patrick McIntyre, SVP of Health Care Analytics at Anthem, one of the country's biggest payers, credits machine learning and big data with their ability to "identify potentially fraudulent or wasteful claims on a daily basis." The algorithms are run at the same time as claims are batch processed, so questionable claims are immediately identified, flagged and sent to the clinical coding experts for review."\cite{Datameer}  This greatly increases the ability to fight FWA by having the machine pinpoint where to look in all the data available.  Suddenly the task of finding fraud is not as daunting.  By leveraging both of these techniques FWA can be discovered at an accelerated pace.  The number of models the system knows will grow over time as more data is fed into it and more patters are discovered and verified.
+Applying unsupervised methods to healthcare data will identify patterns that will then 
+have to be verified as FWA or acceptable patterns.  "Patrick McIntyre, SVP of Health Care 
+Analytics at Anthem, one of the country's biggest payers, credits machine learning and 
+big data with their ability to "identify potentially fraudulent or wasteful claims on a 
+daily basis." The algorithms are run at the same time as claims are batch processed, so 
+questionable claims are immediately identified, flagged and sent to the clinical coding 
+experts for review."\cite{Datameer}  This greatly increases the ability to fight FWA by 
+having the machine pinpoint where to look in all the data available.  Suddenly the task 
+of finding fraud is not as daunting.  By leveraging both of these techniques FWA can be 
+discovered at an accelerated pace.  The number of models the system knows will grow over 
+time as more data is fed into it and more patters are discovered and verified.
 
-Specifically fraud can be particularly hard to find.  There are simple cases which follow a typical known pattern.  However this is only a portion of the problem.  Fraud schemes change and can involve many different entities which may not seem to be related on the surface.  The more data which can be combined and analyzed, the more fraud that can be found.  "Much of the FWA that plague health care payers is the result of organized, sophisticated and collusive activities among providers and between providers and patients. Social network analysis can help identify relationships, links and hidden patterns of information sharing and interactions within potentially fraudulent clusters, including:
+Specifically fraud can be particularly hard to find.  There are simple cases which follow 
+a typical known pattern.  However this is only a portion of the problem.  Fraud schemes 
+change and can involve many different entities which may not seem to be related on the 
+surface.  The more data which can be combined and analyzed, the more fraud that can be 
+found.  "Much of the FWA that plague health care payers is the result of organized, 
+sophisticated and collusive activities among providers and between providers and patients. 
+Social network analysis can help identify relationships, links and hidden patterns of 
+information sharing and interactions within potentially fraudulent clusters, including:
 \begin{itemize}
   \item Patient relationships with known perpetrators of health care fraud;
   \item Links between recipients, businesses, assets and relatives and associates;
   \item Links between licensed and non-licensed and sanctioned providers; and
-  \item Inappropriate relationships between patients, providers, employees, suppliers and partners
+  \item Inappropriate relationships between patients, providers, employees, suppliers 
+  and partners
 \end{itemize}"\cite{LexisNexis}
-In order to keep up with organized fraud activities, there must be a dedicated practice of data analytics which is ever evolving. 
+In order to keep up with organized fraud activities, there must be a dedicated practice 
+of data analytics which is ever evolving. 
 
 
 \subsection{Future uses of Big Data Analytics}
 
-Currently there is still a certain amount of honor built into healthcare.  "The system's inherent structure of trust enables both simple billings errors and illicit actors to hide in the shadows of the murky deep as overpayments quietly siphon money away from legitimate care."\cite{RevCycle}  If a claim is submitted by a valid entity, using the correct process, and everything is in order then it is most likely paid.  For many claims this is done without any specific proof of the services being provided.  With more and more healthcare information being digitized this may not be the case in the future.  X-rays, lab tests, clinical notes, etc. are all being stored digitally.  Computers are now able to interpret images and unstructured text very accurately.  By linking this data to claims data the clinical information could be required as part of claims payment.  An x-ray of broken bone, notes which support a diagnosis, Magnetic Resonance Imaging files, could all be interpreted automatically.  Not only would the data be used to compare to the claims information, but to other images/notes on file to ensure that the same files were not being submitted with multiple claims.  The system could know what one individual medical history looks like compared to another similar to how facial recognition is able to match like images.  Requiring and being able to validate more information before services are paid for would help the reduce the ability of perpetrators of FWA to be able to get reimbursed for services they should not.  This level of verification would not be possible without the ability to process massive amounts of data quickly.  
+Currently there is still a certain amount of honor built into healthcare.  "The system's 
+inherent structure of trust enables both simple billings errors and illicit actors to hide 
+in the shadows of the murky deep as overpayments quietly siphon money away from legitimate 
+care."\cite{RevCycle}  If a claim is submitted by a valid entity, using the correct process, 
+and everything is in order then it is most likely paid.  For many claims this is done 
+without any specific proof of the services being provided.  With more and more healthcare 
+information being digitized this may not be the case in the future.  X-rays, lab tests, 
+clinical notes, etc. are all being stored digitally.  Computers are now able to interpret 
+images and unstructured text very accurately.  By linking this data to claims data the clinical 
+information could be required as part of claims payment.  An x-ray of broken bone, notes which 
+support a diagnosis, Magnetic Resonance Imaging files, could all be interpreted automatically.  
+Not only would the data be used to compare to the claims information, but to other images/notes 
+on file to ensure that the same files were not being submitted with multiple claims.  The system 
+could know what one individual medical history looks like compared to another similar to how 
+facial recognition is able to match like images.  Requiring and being able to validate more 
+information before services are paid for would help the reduce the ability of perpetrators of FWA 
+to be able to get reimbursed for services they should not.  This level of verification would not 
+be possible without the ability to process massive amounts of data quickly.  
 
 
 \section{Conclusions}
 
-While there may be disagreement on many aspects of healthcare in America, everyone should agree that eliminating Fraud, Waste, and Abuse within the system is the right thing to do.  FWA costs billions of dollars annually.  Just a 1 percent reduction in the estimated 80 billion dollars annually would result in 800 million dollars in savings.  With this amount of money at stake significant investments should continue to be made in leveraging advanced big data technologies into solving this problem.  Due to the continued rise in the amount of data collected traditional programming cannot keep up with the pace.  Advanced techniques must be leveraged which can learn in an unsupervised manner.  
+While there may be disagreement on many aspects of healthcare in America, everyone should agree 
+that eliminating Fraud, Waste, and Abuse within the system is the right thing to do.  FWA costs 
+billions of dollars annually.  Just a 1 percent reduction in the estimated 80 billion dollars 
+annually would result in 800 million dollars in savings.  With this amount of money at stake 
+significant investments should continue to be made in leveraging advanced big data technologies 
+into solving this problem.  Due to the continued rise in the amount of data collected traditional 
+programming cannot keep up with the pace.  Advanced techniques must be leveraged which can learn 
+in an unsupervised manner.  
 
-There will inevitably be privacy concerns, but new sources of information must be brought into the fight against FWA.  Historically the payers of most healthcare claims, insurers, have not had the ability to examine actual evidence that a service has taken place on a broad scale.  (It is done manually on a specific case or audit basis.)  Through the use of advances in big data and combining current and new data stores such as electronic health records into the payment process a difference can be made in the amount of money spent on healthcare.  "By combining identity and entity resolution, rules-based claim and clinical review, complex linking analysis and predictive analytics into a seamless workflow, we will come closer to migrating an integrated pre-pay fraud solution to a real risk control environment with the potential to eliminate billions of dollars in improper payments due to FWA. This is not just a health care imperative, but a national economic imperative that must be addressed immediately. The analytics exist. It is time for those analytics to be implemented and the hard choices that enable that implementation to be made to insure that we remain at the forefront of quality care for all Americans."\cite{LexisNexis}
+There will inevitably be privacy concerns, but new sources of information must be brought into the 
+fight against FWA.  Historically the payers of most healthcare claims, insurers, have not had the 
+ability to examine actual evidence that a service has taken place on a broad scale.  (It is done 
+manually on a specific case or audit basis.)  Through the use of advances in big data and combining 
+current and new data stores such as electronic health records into the payment process a difference 
+can be made in the amount of money spent on healthcare.  "By combining identity and entity resolution, 
+rules-based claim and clinical review, complex linking analysis and predictive analytics into a 
+seamless workflow, we will come closer to migrating an integrated pre-pay fraud solution to a real 
+risk control environment with the potential to eliminate billions of dollars in improper payments due 
+to FWA. This is not just a health care imperative, but a national economic imperative that must be 
+addressed immediately. The analytics exist. It is time for those analytics to be implemented and the 
+hard choices that enable that implementation to be made to insure that we remain at the forefront of 
+quality care for all Americans."\cite{LexisNexis}
 
 \begin{acks}
 
   The author would like to thank Dr. Gregor von Laszewski for his
-  support and suggestions to write this paper.  It has helped to expand my knowledge in how modern data analytics can help to save waste which has plagued the healthcare system.
+  support and suggestions to write this paper.  It has helped to expand my knowledge in how modern 
+  data analytics can help to save waste which has plagued the healthcare system.
 
 \end{acks}
 
