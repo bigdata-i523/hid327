@@ -26,7 +26,7 @@ paper1:
        optimize the money spent on healthcare.''
    url: https://github.com/bigdata-i523/hid327/paper1/report.pdf
    type: latex
-   status: 90%
+   status: 99%
    chapter: Health
 ``` 
 
