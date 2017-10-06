@@ -4,6 +4,15 @@
 * 08/25/17 Read the entire class overview section, set up accounts in Piazza, Github, FutureSystem, and Chameleon.
 * 09/01/17 Read through Section 2 Writing Track
 * 09/06/07 Voted in Polls, took survey.
+
+# Location
+ 
+* Address: Shepherdsville KY, 260 W Millwater Falls
+* Latitude: 38.037785
+* Longitude: -85.636159 
+
+# Meeting
+
 * 09/18/17 Attended 6pm class, viewed video from 9/11/17 class.
 * 09/25/17 Attended 6PM class via phone due to travel.
 * 09/27/17 Attended 5PM class.  Asked questions about getting help with LaTex, format of paper.
