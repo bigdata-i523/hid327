@@ -4,6 +4,7 @@
 * 08/25/17 Read the entire class overview section, set up accounts in Piazza, Github, FutureSystem, and Chameleon.
 * 09/01/17 Read through Section 2 Writing Track
 * 09/06/07 Voted in Polls, took survey.
+* 10/06/17 Added Location and Meeting sections to notebook file.
 
 # Location
  
