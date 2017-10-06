@@ -44,3 +44,6 @@
 * 10/01/17 Submitting questions to TAs about Paper1.  Bibliography is not showing (therefore cannot cite references, but have tagged to cite) and the graphic is skipping a page before it displays for some reason.
 * 10/02/17 Updated paper to include proper works cited per feedback.
 * 10/03/17 Worked on paper to get it to 99% done and am asking for a quick review by TAs to make sure I do not have something wrong in formatting or citing.
+* 10/05/17 Worked extensively to fix issues with formatting of paper in github to elminated problems found during review.
+* 10/06/17 Completed recommendations by TA on slight modifications which would enhance the paper.
+
