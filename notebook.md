@@ -47,5 +47,5 @@
 * 10/03/17 Worked on paper to get it to 99% done and am asking for a quick review by TAs to make sure I do not have something wrong in formatting or citing.
 * 10/05/17 Worked extensively to fix issues with formatting of paper in github to elminated problems found during review.
 * 10/06/17 Completed recommendations by TA on slight modifications which would enhance the paper.
-* 10/08/17 Made final changes to Paper1 and set it to 100%.
+* 10/08/17 Made final changes to Paper1 and set it to 100% in README file.
 
