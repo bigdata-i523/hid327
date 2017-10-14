@@ -46,6 +46,6 @@ paper2:
        very detrimental to the US labor market.  This paper is the beginning of a look 
        at how large of an impact that could be.
    type: latex
-   status: 0%
+   status: 5%
    chapter: Sensors
 ```
