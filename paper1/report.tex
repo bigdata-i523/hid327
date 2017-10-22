@@ -71,13 +71,12 @@ while working with a patient.  In order to fully utilize advances in technology,
 multiple sources of information must be brought together.  Sources include claims 
 (current and historic), clinical, provider, geospatial, and other sources of 
 information.  This allows for data analytics to take a deeper look into not only a 
-single participant, but others who may be related to that participant.  ``If Provider 
-A is involved in improper billing, it is not uncommon for other providers with which 
-they associate to also be engaged in bad behavior.  Thus, many payers will work to 
-analyze connected providers.  Information on corporate ownership, billing and 
-management companies, social media interactions of physicians and staff can reveal 
-whether other physicians, pharmacies, radiology centers, home infusion agencies, etc. 
-are engaged in a broader pattern of referral and collusion.''\cite{RevCycle}
+single participant, but others who may be related to that participant.  Providers who 
+are involved in improper billing tend to be associated with other providers who have a 
+higher frequency of being involved with improper billing as well.  For big data analysis 
+this involves looking at corporate ownership, who they use as a billing agent, who they 
+tend to refer patients to for other service in order to uncover a larger pattern of 
+FWA collusion.\cite{RevCycle}
 
 The problem for big data to solve is the size of all this data and how to process it 
 fast enough.  Using CMS as an example, being a government entity much of their data is 
@@ -102,21 +101,21 @@ Hadoop, analysts could divide the different sources of information into data lak
 looking at each source separately, and then combining the results.  Table 
 \ref{fig:TypesofFraud} on page \pageref{fig:TypesofFraud} shows sources of information 
 and what level of FWA they are generally related to.  The highest level combines sets 
-of data.  ``Level 7 combines all previous data views and concerns all fraud that is part 
-of criminal networks which involve many different beneficiaries and/or providers. This 
-much larger data view, spanning billions of claims in the case of Medicaid, is the most 
-rich, delivering the ability to perform complex network analysis that could detect 
-intricate conspiracies. However, performance of analysis here will be much lower than 
-in previous levels.''\cite{THORNTON20131252} 
+of data from all data views.  It looks for patterns across criminal networks which may 
+involve many providers and beneficiaries.  By looking at things more globally across 
+potentially billions of records, big data provides the ability to perform complex 
+network analysis which can uncover intricate conspiracies perpetrated by coordinated 
+efforts of many providers and facilities.\cite{THORNTON20131252} 
 
 While there are simple cases of fraud which follow 
 a typical known pattern, this is only a portion of the problem.  Fraud schemes 
 change and can involve many different entities which may not seem to be related on the 
 surface.  The more data which can be combined and analyzed, the more fraud that can be 
-found.  ``Much of the FWA that plague health care payers is the result of organized, 
-sophisticated and collusive activities among providers and between providers and patients. 
-Social network analysis can help identify relationships, links and hidden patterns of 
-information sharing and interactions within potentially fraudulent clusters, including:
+found.  The need for this type of analysis is because much of the FWA committed in 
+healthcare is done so by providers working in conjunction with each other and providers 
+working in conjunction with their patients.\cite{LexisNexis  ``Social network analysis 
+can help identify relationships, links and hidden patterns of information sharing and 
+interactions within potentially fraudulent clusters, including:  
 \begin{itemize}
   \item Patient relationships with known perpetrators of health care fraud;
   \item Links between recipients, businesses, assets and relatives and associates;
@@ -131,14 +130,14 @@ Traditionally programs have been written to look for specific sets of circumstan
 Leveraging existing knowledge about the data and using it to look for specific patterns 
 is known as supervised in big data terms.  ``There are several supervised fraud detection 
 methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy 
-Logic. NNs and decision trees are the most popular fraud detection methods because of 
-their high tolerance of noisy data and huge data set handling.''\cite{Ghuse}  There are also 
-unsupervised methods in which data is fed into the system without preexisting notions 
-of what to look for\cite{Ghuse}.  Unsupervised methods sort through data and find 
-relationships and groupings of related information, find clusters of what could be 
-considered normal, and determine where the outliers are.
+Logic.''\cite{Ghuse}  Neural Networks and Decision Trees have a higher tolerance for 
+handling large amounts of noisy data and are therefore more popular than the other 
+methods.  There are also unsupervised methods in which data is fed into the system 
+without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised methods sort 
+through data and find relationships and groupings of related information, find clusters 
+of what could be considered normal, and determine where the outliers are.
 
-Because unsupervisord methods only identify outliers, applying unsupervised methods to 
+Because unsupervised methods only identify outliers, applying unsupervised methods to 
 healthcare data will require that the outliers will then have to be verified as FWA or 
 acceptable patterns.  ``Patrick McIntyre, SVP of Health Care Analytics at Anthem, one 
 of the country's biggest payers, credits machine learning and big data with their 
@@ -159,26 +158,22 @@ They include the ability to identify FWA claims during the payment cycle so that
 is not made to suspect claims.  Truven Health\cite{TruvenHealth}, Healthcare Fraud Shield\cite{FraudShield}, 
 and SAS\cite{SASHealth}, just to name a few, all have systems they offer based on big data.  The 
 specifics of the systems they offer are proprietary in nature so many of the descriptions are 
-generic.  Truven Health for instance claims ``Our approach to FWA analytics is to infuse our 
-solution with healthcare intelligence.  As one example, Truven Health pioneered a `medical model' 
-for the healthcare fraud detection process.  A key component of this model is our Medical Episode 
-Grouper (MEG).  MEG is an advanced healthcare analytic methodology that groups all the services 
-for a clinically-relevant episode of illness, including inpatient, outpatient, and drug.  The MEG 
-episodes are constructed using rigorously defined clinical classifications based on current medical 
-literature.  Episodes analysis can expose patterns of clinical and billing abuse that are otherwise 
-difficult to detect such as wasteful or unnecessary services.  Using MEG, the analyst can understand 
-the entire range and cost of services provided to a patient during a single episode of illness, 
-which then is aggregated to profile a provider's entire practice.''\cite{TruvenHealth} SAS materials 
-include ``Detect improper payments before the money goes out the door, and get potential savings of 
-hundreds of millions of dollars. Take an enterprise approach to detecting and preventing fraud, waste 
-and abuse with a hybrid analytics solution''\cite{SASHealth} and ``By making analytical models and 
-rules engines part of the process, you can spot more payment integrity breaches than ever before. 
-Process all data (not just a sample) through rules and analytical models. Use customized models to 
-detect previously unknown schemes. And spot linked entities and crime rings, which can help stem 
-larger losses.''\cite{SASFraud}.  The U.S. Federal government is also investing heavily into FWA 
-analytics.  ``The CMS has awarded defense contractor Northrop Grumman Corp. a \$ 91 million contract 
-to develop and implement a second generation of an advanced analytics system, called the Fraud 
-Prevention System, to help identify high-risk claims in Medicaid and Medicare.''\cite{ModernHealthcare}
+generic.  Truven Health claims their solution mixes technology and healthcare intelligence.  They 
+have a model which groups services together for form a picture of the full view of the illness 
+including inpatient, outpatient, and pharmaceuticals. This data in analyzed by knowledge based on 
+clinical classifications and medical literature.  This helps to identify wasteful or unnecessary 
+service patterns in clinical and billing abuse which are hard to detect. Using this approach 
+``the analyst can understand the entire range and cost of services provided to a patient during a 
+single episode of illness, which then is aggregated to profile a provider's entire practice.''\cite{TruvenHealth} 
+SAS materials include the ability to find hundreds of millions of dollars in savings before 
+claims are paid by taking an enterprise approach to FWA.\cite{SASHealth}  Their solution 
+incorporates the rules and models into the claims process so companies can proccess them against 
+all of their claims instead of samples sets.  This helps to uncover more schemes and ``spot 
+linked entities and crime rings, which can help stem larger losses.''\cite{SASFraud}.  The 
+U.S. Federal government is also investing heavily into FWA analytics.  ``The CMS has awarded 
+defense contractor Northrop Grumman Corp. a \$ 91 million contract to develop and implement a 
+second generation of an advanced analytics system, called the Fraud Prevention System, to 
+help identify high-risk claims in Medicaid and Medicare.''\cite{ModernHealthcare}
 
 \subsection{Future uses of Big Data Analytics}
 
@@ -206,14 +201,13 @@ Historically the payers of most healthcare claims, insurers, have not had the
 ability to examine actual evidence that a service has taken place on a broad scale.  (It is done 
 manually on a specific case or audit basis.)  Through the use of advances in big data and combining 
 current and new data stores such as electronic health records into the payment process a difference 
-can be made in the amount of money lost to FWA in healthcare.  ``By combining identity and entity resolution, 
-rules-based claim and clinical review, complex linking analysis and predictive analytics into a 
-seamless workflow, we will come closer to migrating an integrated pre-pay fraud solution to a real 
-risk control environment with the potential to eliminate billions of dollars in improper payments due 
-to FWA. This is not just a health care imperative, but a national economic imperative that must be 
-addressed immediately. The analytics exist. It is time for those analytics to be implemented and the 
-hard choices that enable that implementation to be made to insure that we remain at the forefront of 
-quality care for all Americans.''\cite{LexisNexis}
+can be made in the amount of money lost to FWA in healthcare.  Data from providers must be run 
+against entity resolution solutions.  Complex claims analysis including rules-based clinical 
+reviews must be part of the normal pre-payment workflow leveraging predictive analytics to 
+stop payments on billions of dollars worth of FWA claims before they are made.  ``This is not just 
+a health care imperative, but a national economic imperative that must be addressed 
+immediately.''\cite{LexisNexis}  We have the technology today which will help protect the
+integrity of the healthcare system and the quality of care for Americans. \cite{LexisNexis}
 
 
 \section{Conclusions}
