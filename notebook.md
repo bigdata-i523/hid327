@@ -19,6 +19,9 @@
 * 09/27/17 Attended 5PM class.  Asked questions about getting help with LaTex, format of paper.
 * 10/02/17 Attended 6PM class.  Listened to hear issues others have had.  Asked question, but my connection was breaking up and it was hard for others to hear.  I will us my phone for the voice the next time and computer for the video.
 * 10/11/17 Attended 5PM class.  Asked questions about how to do some of the homework as I am not familiar with the environment for saving data and writing Python against the data store.  Asked about choosing a topic for Project as I have not seen a list like the ones for Paper1 and Paper2.
+* 10/16/17 Attended 6PM class and half of the class which started at approximately 7PM.
+* 10/18/17 Attended 5PM class.
+* 10/23/17 Attended 6PM class.
 
 # Theory
 
@@ -28,6 +31,7 @@
 * 09/26/17 Completed remaining course materials for Section 3.2
 * 10/02/17 Started to view the materials for Section 3.3.  Also viewed materials specific to Healthcare which is the topic of my paper.
 * 10/13/18 This week I finished watching the material for Section 3.3.
+* 10/16/17 Watched Section 3.4 through 3.4.1.12.
 
 # Practice
 
@@ -51,4 +55,7 @@
 * 10/06/17 Completed recommendations by TA on slight modifications which would enhance the paper.
 * 10/08/17 Made final changes to Paper1 and set it to 100% in README file.
 * 10/14/17 Began research for Paper2.
+* 10/22/17 Completed changes based on TA review and submitted Paper1 on TurnItIn.
+* 10/22/17 Wrote abstract for Project and posted it on Piazza.
+
 
