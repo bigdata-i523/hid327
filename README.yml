@@ -15,7 +15,7 @@ paper1:
     chapter: Health
     hid:
         - 327
-    status: 100%
+    status: 100%  10/25/2017
     title: Using Big Data to minimize Fraud, Waste, and Abuse (FWA) in United States
         Healthcare
     type: latex
