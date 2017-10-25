@@ -22,7 +22,7 @@
 * 10/16/17 Attended 6PM class and half of the class which started at approximately 7PM.
 * 10/18/17 Attended 5PM class.
 * 10/23/17 Attended 6PM class.
-* 10/23/17 Attended 5PM class to confirm paper1 has been submitted correctly.
+* 10/25/17 Attended 5PM class to confirm paper1 has been submitted correctly.
 
 # Theory
 
