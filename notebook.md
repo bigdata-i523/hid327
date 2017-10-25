@@ -22,6 +22,7 @@
 * 10/16/17 Attended 6PM class and half of the class which started at approximately 7PM.
 * 10/18/17 Attended 5PM class.
 * 10/23/17 Attended 6PM class.
+* 10/23/17 Attended 5PM class to confirm paper1 has been submitted correctly.
 
 # Theory
 
@@ -57,5 +58,4 @@
 * 10/14/17 Began research for Paper2.
 * 10/22/17 Completed changes based on TA review and submitted Paper1 on TurnItIn.
 * 10/22/17 Wrote abstract for Project and posted it on Piazza.
-
-
+* 10/25/17 Updated README.YML based on input the Procedings PDF file loaded to the class page.
