@@ -59,3 +59,4 @@
 * 10/22/17 Completed changes based on TA review and submitted Paper1 on TurnItIn.
 * 10/22/17 Wrote abstract for Project and posted it on Piazza.
 * 10/25/17 Updated README.YML based on input the Procedings PDF file loaded to the class page.
+* 10/27/17 Continued to research and write Paper 2.  Currently have about 50% of paper written with outline for the remaining paper set.
