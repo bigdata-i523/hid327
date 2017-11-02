@@ -23,6 +23,7 @@
 * 10/18/17 Attended 5PM class.
 * 10/23/17 Attended 6PM class.
 * 10/25/17 Attended 5PM class to confirm paper1 has been submitted correctly.
+* 10/30/17 Attended 6PM class.
 
 # Theory
 
@@ -33,6 +34,7 @@
 * 10/02/17 Started to view the materials for Section 3.3.  Also viewed materials specific to Healthcare which is the topic of my paper.
 * 10/13/18 This week I finished watching the material for Section 3.3.
 * 10/16/17 Watched Section 3.4 through 3.4.1.12.
+* 10/30/17 Viewed remaining videos for Section 3.4.
 
 # Practice
 
@@ -60,3 +62,4 @@
 * 10/22/17 Wrote abstract for Project and posted it on Piazza.
 * 10/25/17 Updated README.YML based on input the Procedings PDF file loaded to the class page.
 * 10/27/17 Continued to research and write Paper 2.  Currently have about 50% of paper written with outline for the remaining paper set.
+* 10/31/17 Spent more time writing Paper 2.  Approximately 75% complete.
