@@ -19,8 +19,8 @@ paper1:
         - 327
     status: 100%  10/25/2017
     title: >
-        Using Big Data to minimize Fraud, Waste, and Abuse (FWA) in United 
-        States Healthcare
+        Using Big Data to minimize Fraud, Waste, and Abuse (FWA) in 
+        United States Healthcare
     type: latex
     url: https://github.com/bigdata-i523/hid327/paper1/report.pdf
 paper2:
@@ -43,19 +43,20 @@ paper2:
     url: https://github.com/bigdata-i523/hid327/paper2/report.tex
 project:
     abstract: >
-        Aside from people changing their habits, big data analytics may hold 
-        the best possibility for the improvement of worldwide health.  It 
-        will enable the ability to correctly diagnose patients more quickly, 
-        even when the patients may not be able to be physically seen by a 
-        provider.  It will be used to create treatment plans specific to not 
-        only an illness, but to the patient's overall health condition and 
-        history, demographics, environment, and access to resources.  While 
-        it may not solve the problem of everyone not having access to the best 
-        of care, it can help to make sure everyone can get the best care 
-        possible for them.  This paper explores the ways in which big data is 
-        evolving in the field of healthcare to make these possibilities become 
-        realities and looks at some of the social concerns which could hold it 
-        back.
+        Aside from people changing their habits, big data analytics 
+        may hold the best possibility for the improvement of 
+        worldwide health.  It will enable the ability to correctly 
+        diagnose patients more quickly, even when the patients may 
+        not be able to be physically seen by a provider.  It will 
+        be used to create treatment plans specific to not only an 
+        illness, but to the patient's overall health condition and 
+        history, demographics, environment, and access to resources.  
+        While it may not solve the problem of everyone not having 
+        access to the best of care, it can help to make sure everyone 
+        can get the best care possible for them.  This paper explores 
+        the ways in which big data is evolving in the field of 
+        healthcare to make these possibilities become realities and 
+        looks at some of the social concerns which could hold it back.
     author:
         - Paul Marks
     chapter: Health
