@@ -63,3 +63,5 @@
 * 10/25/17 Updated README.YML based on input the Procedings PDF file loaded to the class page.
 * 10/27/17 Continued to research and write Paper 2.  Currently have about 50% of paper written with outline for the remaining paper set.
 * 10/31/17 Spent more time writing Paper 2.  Approximately 75% complete.
+* 11/03/17 Completed writing for Paper 2, but still need to fine tune a couple of areas and check citations.
+* 11/05/17 Paper 2 is ready for review.  It compiles in ShareLaTeX.  All files copied over to GitHub,
