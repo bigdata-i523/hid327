@@ -3,8 +3,9 @@
 * Note - The dates before 9/18 are estimates as I was not tracking the exact dates I performed these tasks.
 * 08/25/17 Read the entire class overview section, set up accounts in Piazza, Github, FutureSystem, and Chameleon.
 * 09/01/17 Read through Section 2 Writing Track
-* 09/06/07 Voted in Polls, took survey.
+* 09/06/17 Voted in Polls, took survey.
 * 10/06/17 Added Location and Meeting sections to notebook file.
+* 10/30/17 Voted in Poll. 
 
 # Location
  
@@ -62,6 +63,7 @@
 * 10/22/17 Wrote abstract for Project and posted it on Piazza.
 * 10/25/17 Updated README.YML based on input the Procedings PDF file loaded to the class page.
 * 10/27/17 Continued to research and write Paper 2.  Currently have about 50% of paper written with outline for the remaining paper set.
+* 10/30/17 Copied files to Paper2 folder in GitHub to prepare for uploading paper.
 * 10/31/17 Spent more time writing Paper 2.  Approximately 75% complete.
 * 11/03/17 Completed writing for Paper 2, but still need to fine tune a couple of areas and check citations.
 * 11/05/17 Paper 2 is ready for review.  It compiles in ShareLaTeX.  All files copied over to GitHub,
