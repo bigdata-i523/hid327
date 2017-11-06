@@ -36,7 +36,7 @@ paper2:
     chapter: Sensors
     hid:
         - 327
-    status: 75%
+    status: 99%
     title: The Impact of Self-Driving Cars on the Economy
     type: latex
     url: https://github.com/bigdata-i523/hid327/paper2/report.tex
