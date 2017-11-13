@@ -27,6 +27,7 @@
 * 10/30/17 Attended 6PM class.
 * 11/06/17 Attended 6PM class.
 * 11/08/17 Attended 5PM class to ask a short question on Paper2 submission.
+* 11/13/17 Attended 6PM class.
 
 # Theory
 
