@@ -25,6 +25,8 @@
 * 10/23/17 Attended 6PM class.
 * 10/25/17 Attended 5PM class to confirm paper1 has been submitted correctly.
 * 10/30/17 Attended 6PM class.
+* 11/06/17 Attended 6PM class.
+* 11/08/17 Attended 5PM class to ask a short question on Paper2 submission.
 
 # Theory
 
@@ -36,6 +38,7 @@
 * 10/13/18 This week I finished watching the material for Section 3.3.
 * 10/16/17 Watched Section 3.4 through 3.4.1.12.
 * 10/30/17 Viewed remaining videos for Section 3.4.
+* 11/09/17 Viewed Section 3.5 videos.
 
 # Practice
 
@@ -66,4 +69,5 @@
 * 10/30/17 Copied files to Paper2 folder in GitHub to prepare for uploading paper.
 * 10/31/17 Spent more time writing Paper 2.  Approximately 75% complete.
 * 11/03/17 Completed writing for Paper 2, but still need to fine tune a couple of areas and check citations.
-* 11/05/17 Paper 2 is ready for review.  It compiles in ShareLaTeX.  All files copied over to GitHub,
+* 11/05/17 Paper 2 is ready for review.  It compiles in ShareLaTeX.  All files copied over to GitHub.
+* 11/12/17 Conducted research for my Project, took notes on resources, and outlined my paper.
