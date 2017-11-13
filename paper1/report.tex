@@ -114,42 +114,44 @@ change and can involve many different entities which may not seem to be related 
 surface.  The more data which can be combined and analyzed, the more fraud that can be 
 found.  The need for this type of analysis is because much of the FWA committed in 
 healthcare is done so by providers working in conjunction with each other and providers 
-working in conjunction with their patients.\cite{LexisNexis}  ``Social network analysis 
-can help identify relationships, links and hidden patterns of information sharing and 
-interactions within potentially fraudulent clusters, including:  
+working in conjunction with their patients.\cite{LexisNexis}  Big data analytics can 
+find hidden relationships and patterns in information which show FWA clusters.  These 
+can include, but are not limited to:  
 \begin{itemize}
-  \item Patient relationships with known perpetrators of health care fraud;
-  \item Links between recipients, businesses, assets and relatives and associates;
-  \item Links between licensed and non-licensed and sanctioned providers; and
-  \item Inappropriate relationships between patients, providers, employees, suppliers 
-  and partners''\cite{LexisNexis}
+  \item Relationships between patients and the people who are committing fraud,
+  \item Connections among those committing fraud, employees, businesses, and even their 
+  relatives,
+  \item Suspect interactions between providers, and
+  \item Overall inappropriate relationships among various active fraud participants, 
+  partners, and patients.\cite{LexisNexis}
 \end{itemize}
 In order to keep up with organized fraud activities, there must be a dedicated practice 
 of data analytics which is ever evolving. 
 
 Traditionally programs have been written to look for specific sets of circumstances.  
 Leveraging existing knowledge about the data and using it to look for specific patterns 
-is known as supervised in big data terms.  ``There are several supervised fraud detection 
-methods such as: Bayesian Networks, Neural Networks (NNs), Decision Trees, and Fuzzy 
-Logic.''\cite{Ghuse}  Neural Networks and Decision Trees have a higher tolerance for 
-handling large amounts of noisy data and are therefore more popular than the other 
-methods.  There are also unsupervised methods in which data is fed into the system 
-without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised methods sort 
-through data and find relationships and groupings of related information, find clusters 
-of what could be considered normal, and determine where the outliers are.
+is known as supervised in big data terms.  Supervised fraud detection is represented 
+in several methods including ``Bayesian Networks, Neural Networks (NNs), Decision Trees, 
+and Fuzzy Logic.''\cite{Ghuse}  Neural Networks and Decision Trees have a higher 
+tolerance for handling large amounts of noisy data and are therefore more popular than 
+the other methods.  There are also unsupervised methods in which data is fed into the 
+system without preexisting notions of what to look for\cite{Ghuse}.  Unsupervised 
+methods sort through data and find relationships and groupings of related information, 
+find clusters of what could be considered normal, and determine where the outliers are.
 
 Because unsupervised methods only identify outliers, applying unsupervised methods to 
 healthcare data requires that outliers then have to be verified as FWA or 
-acceptable patterns.  ``Patrick McIntyre, SVP of Health Care Analytics at Anthem, one 
-of the country's biggest payers, credits machine learning and big data with their 
-ability to ``identify potentially fraudulent or wasteful claims on a daily basis.'' The 
-algorithms are run at the same time as claims are batch processed, so questionable 
-claims are immediately identified, flagged and sent to the clinical coding experts for 
-review.''\cite{Datameer}  This greatly increases the ability to fight FWA by having the 
-machine pinpoint where to look in all the data available to the reviewer.  Suddenly the task 
-of finding fraud is not as daunting.  By leveraging both of these techniques FWA can be 
-discovered at an accelerated pace.  The number of models the system knows will grow over 
-time as more data is fed into it and more patters are discovered and verified.
+acceptable patterns.  According to Anthem's SVP of Healthcare Analytics Patrick 
+McIntyre, they take this into account.  Anthem is able to run algorithms against their 
+claims as they are being processed.  This allows machine learning to discover claims 
+which may be fraudulent or wasteful in nature on a daily basis.  Once identified 
+``questionable claims are immediately identified, flagged and sent to the clinical 
+coding experts for review.''\cite{Datameer}  This greatly increases the ability to 
+fight FWA by having the machine pinpoint where to look in all the data available to 
+the reviewer.  Suddenly the task of finding fraud is not as daunting.  By leveraging 
+both of these techniques FWA can be discovered at an accelerated pace.  The number of 
+models the system knows will grow over time as more data is fed into it and more 
+patterns are discovered and verified.
 
 
 \subsection{Current Solutions}
@@ -164,8 +166,8 @@ have a model which groups services together for form a picture of the full view 
 including inpatient, outpatient, and pharmaceuticals. This data in analyzed by knowledge rules based 
 on clinical classifications and medical literature.  This helps to identify wasteful or unnecessary 
 service patterns in clinical and billing abuse which are hard to detect.  Using this approach 
-``the analyst can understand the entire range and cost of services provided to a patient during a 
-single episode of illness, which then is aggregated to profile a provider's entire practice.''\cite{TruvenHealth}
+an analyst can look at the costs associated with the patient during their illness, the services 
+provided, and combine this with others to form a profile of the provider's practice.\cite{TruvenHealth}
 
 SAS materials include the ability to find hundreds of millions of dollars in savings before 
 claims are paid by taking an enterprise approach to FWA.\cite{SASHealth}  Their solution 
