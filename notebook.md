@@ -29,6 +29,8 @@
 * 11/08/17 Attended 5PM class to ask a short question on Paper2 submission.
 * 11/13/17 Attended 6PM class.
 * 11/20/17 Attended 6PM class.
+* 11/27/17 Attended 6PM class.
+* 11/29/17 Attended 6PM class.
 
 # Theory
 
@@ -42,6 +44,7 @@
 * 10/30/17 Viewed remaining videos for Section 3.4.
 * 11/09/17 Viewed Section 3.5 videos.
 * 11/14/17 Viewed Section 3.6 videos.
+* 11/21/17 Viewed Sections 3.7, 3.8, and 3.9 videos.
 
 # Practice
 
@@ -76,4 +79,14 @@
 * 11/12/17 Conducted research for my Project, took notes on resources, and outlined my paper.
 * 11/14/17 Began writing Project.  My project is a paper only, no programming.
 * 11/16/17 Continued to write on project.  About 33% complete at this time.
+* 11/24/17 Continued to write on project.
+* 11/25/17 Continued to write on project.
+* 11/26/17 Continued to write on project.
+* 11/27/17 Continued to write on project.
+* 11/28/17 Continued to write on project.
+* 11/30/17 Continued to write on project.
+* 12/01/17 Continued to write on project.
+* 12/02/17 Continued to write on project.  Submitted project for preliminary review.
+
+
 
