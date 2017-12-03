@@ -1,1 +1,1052 @@
+\documentclass[sigconf]{acmart}
+
+\input{format/i523}
+
+\begin{document}
+\title{Using Big Data to Minimize Fraud, Waste, and Abuse (FWA) in United States Healthcare}
+
+
+\author{Paul Marks}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{Online Student}
+  \city{Shepherdsville} 
+  \state{Kentucky} 
+  \postcode{40165}
+}
+\email{pcmarks@iu.edu}
+
+
+\begin{abstract}
+Aside from people changing their habits, big data analytics
+may hold the best possibility for the improvement of
+worldwide health.  It will enable the ability to correctly
+diagnose patients more quickly, even when the patients may
+not be able to be physically seen by a provider.  It will
+be used to create treatment plans specific to not only an
+illness, but to the patient's overall health condition and
+history, demographics, environment, and access to resources.
+While it may not solve the problem of everyone not having
+access to the best of care, it can help to make sure everyone
+can get the best care possible for them.  This paper explores
+the ways in which big data is evolving in the field of
+healthcare to make these possibilities become realities and
+looks at some of the social concerns which could hold it back.
+\end{abstract}
+
+\keywords{i523, hid327, healthcare, patient treatment, 
+genomics, diagnosis}
+
+
+\maketitle
+
+\section{Introduction}
+There have been many advances in big data analytics over the last 
+several years.  More and more data is able to be processed in a 
+shorter amount of time.  There are also many new sources of data.  
+Data is not what big data is about though.  It is about taking 
+data and turning it into information that can be useful.  The 
+application of big data can vary, but very few may be more 
+important than the ability to use data for the betterment of 
+people's health across the globe.  This is one way in which data 
+science can make a substantial contribution to humanity.
+
+Making this a reality is not, nor will be, a simple task.  Health 
+data itself requires the proper handling of the information as 
+it is very sensitive.  On one hand people have a right to privacy.  
+On the other, if data is kept isolated, not combined with records 
+from other people, then this limits the ability to gather insight 
+and find breakthroughs.  They key is to ensure privacy, but keep 
+the integrity and relationships of the data in order to preserve 
+privacy while gaining insight.  The insight gained has endless 
+possibilities.
+
+One issue facing the medical profession today is a lack of trained 
+professionals.  The number of patients per healthcare worker around 
+the world can vary from more than six per 1,000 people to less than 
+one half per 1,000\cite{WHODensity}.  It is easy to see how this 
+one fact greatly impacts the expected lifespan of people.  But 
+what if a patient could be examined, diagnosed, and have access to 
+a treatment plan without a human doctor needed?  It may sound 
+futuristic, but the technology is being implemented today thanks 
+in part to data analytics.   
+
+The impact of big data on healthcare doesn't stop there.  The 
+cost of treating 5 percent of the most chronic conditions can 
+consume up to 50 percent of the money spent on 
+healthcare\cite{Optum}.  One reason for this is prevention, 
+diagnosis, and treatment plans are not optimized.  There is not 
+one way to help patients avoid chronic conditions.  It is based 
+on many inputs depending on the person, their environment, and 
+other factors.  These same aspects impact the effectiveness of 
+treatment plans as well.  One size does not fit all.  Through 
+analytics many factors are being analyzed along with the results 
+of prior plans to determine which methods would be the most 
+effective.  Avoiding a chronic condition not only saves money, 
+but extends a patient's life and improves the quality of their 
+life.  
+
+The ability to take many factors into account for a patient goes 
+well beyond chronic conditions.  Genomic technology is 
+progressing which is allowing for a person's individual genome to 
+be one of the inputs.  Each person on earth has their own specific 
+genome with billions of combinations, some of which directly 
+impact their health and susceptibility to illnesses.  Through big 
+data analytics, this type of analysis may one day be commonplace 
+like taking blood pressure and other vital statics into account.  
+
+The discovery of new drugs and how they can be used to treat 
+people is being sped up by the power of big data techniques.  
+Drug research requires an immense amount of information to be 
+correlated and processed.  Big data is helping to speed this up 
+and even helps speed up clinical trials by matching the right set 
+of circumstances to provide viable results.  
+
+Progress does not always come without drawbacks, and big data 
+analytics in healthcare is no exception.
+
+\section{Handling the Data}
+
+\subsection{Security}
+Any use of healthcare data must take into account the ability to 
+protect the data.  Therefore a brief understanding of the task must 
+be addressed. Healthcare information usually has two forms of 
+protected information:  Personally Identifiable Information (PII) 
+and Protected Health Information (PHI).  In order to be able to keep 
+data with this type of information you must follow very strict rules 
+on safeguarding it.  The best known regulations are based on the 
+Health Insurance Portability and Accountability Act (HIPAA) of 1996.  
+Among the governmental standards to comply with HIPAA are the 
+Security Control Assessment\cite{CMS} and Defense Information Systems 
+Agency's Security Technical Implementation Guides\cite{DISA}.  These 
+types of requirements can be costly and require constant changes to 
+remain secure.  
+
+Even with the ability to secure the data properly, any company wishing 
+to obtain data must have an approved reason to get the information or 
+the approval of the patients involved.  Obtaining approval from each 
+patient in a big data application is not practical.  Data is needed 
+from too many people to obtain approval for each of them.  A common 
+way to handle this is through de-identification.
+
+De-identification is the ability to alter the data in such a way that 
+you cannot link health information to a person or identify individuals 
+in the data.  However, in order for the data to be useful for analysis 
+it cannot be changed randomly so the links between certain data 
+elements from record to record is lost.  For instance, a diagnosis of 
+a specific cancer in a patient must still be able to be linked to 
+treatment data, x-rays, blood tests, etc. from that patient.  In other 
+words, de-identification has to be done in such a way that the data 
+integrity remains in place, but the individual's identity is protected.  
+This can become complicated because data elements such as age, sex, 
+and geographical location are important.
+
+Fortunately there are software solutions to assist in the 
+de-identification of medical information.  The software is broken into 
+two categories:  structured data and free-form text.  
+De-identification of structured data is generally easier.  The data 
+has a known set of fields of which the ones which can identify a person 
+and their health are known.  These fields are added to the software and 
+algorithms are run against them.  The resultant data is useful for 
+analysis, but the identity of any individual is safe.  This is because 
+the algorithm changes data in such a manner that it protects the person 
+and the data integrity.  Examples of tools in this arena include PARAT 
+from Privacy Analytics, Inc., mu-Argus from the Netherlands national 
+statistical agency, Cornell Anonymization Toolkit (CAT), an anonymization 
+toolkit from the University of Texas at Dallas, sdcMirco from 
+r-project.org\cite{eHealthInfo}.  Commercial tools like Privacy Analytics 
+Eclipse claim to de-identify 10 million records per day from a variety 
+of sources\cite{PrivacyAnalytics}.
+
+Unstructured data is more complex.  The data which needs to be 
+de-identified can be located anywhere within the dataset.  This includes 
+the text or metadata attached to images such as x-rays.  Vital clinical, 
+diagnosis, treatment, and other medical information is also included 
+throughout unstructured data.  Not being able to identify all PHI and 
+PII can cause privacy concerns.  Not linking all the correct data 
+together reduces data integrity which reduces the usefulness of the 
+data being studied.  
+
+Being able to properly de-identify and link unstructured data is 
+being studied and refined.  There are challenges for solutions to the 
+problem.  Informatics for Integrating Biology and the Bedside\cite{i2b2} 
+has held challenges to help further solutions for this problem.  The 
+most recent was held in 2014.   Track 1 of this challenge noted that 
+``Removing protected health information (PHI) is a critical step in 
+making medical records accessible to more people, yet it is a very 
+difficult and nuanced''\cite{i2b2}.  The ability to properly de-identify 
+the data is rooted in the ability for the software to perform natural 
+language processing.  The focus of the challenge was all eighteen HIPAA 
+defined PHI types\cite{ScienceDirect}.  While not as mainstream as 
+de-identifying structured data, the ability to de-identify unstructured 
+data will continue to progress and be solved through commercially 
+available products over time.
+
+\subsection{Data Sharing}
+There are many sources of healthcare data.  This is a major hurdle as the 
+data is in different systems which are governed by different entities and 
+used for purposes\cite{Datapine}.  Data is stored in claims systems, 
+clinical settings, pharmacies, and others.  It is stored in different 
+formats.  These sources may not contain similar key data that allows it 
+to be easily brought together.  Individual patients usually have a single 
+provider who is their primary insurer.  This data is usually in standard 
+formats.  However the same patients may have many providers of care using 
+different systems.  While most providers leverage electronic health 
+records, these systems can contain many free-form text fields, images, and 
+other types of fields. These data sets contain a wealth of information, 
+but they are missing data which could be vital such as social, 
+environmental, and community data.  Other sources of data which could be 
+useful are habits which people store on themselves such as food and 
+activity tracking they may enter into any number of online 
+applications\cite{HCAPop}.
+
+While more data is being collected, there are still barriers to sharing 
+it.  There are the security and privacy concerns discussed earlier, but 
+also the costs and who pays for them which must be addressed.  There are 
+tools and strategies being worked on in the industry to make sharing data 
+across disparate systems possible.  So far a widely adopted solution has 
+not emerged\cite{HCATop10}.  Until such time that it does, data analytics 
+in healthcare will be hampered.
+
+\section{Big Data in a Clinical Setting}
+Being a doctor can be like being a human big data machine at times.  They 
+take in many variables, process it against the history of information they 
+have, and come to some sort of conclusion.  In many cases there are multiple 
+diagnosis that can be made.  In fact sometimes there a lot of diagnosis that 
+can be made.  Unfortunately while much of the work is very scientific it 
+does not mean that coming to a conclusion is a precise science.  
+
+Different doctors have different backgrounds.  They have seen different 
+patients, seen different diseases, studied at different locations, and read 
+different literature.  In short, their diagnosis is based off of their 
+experiences.  Unfortunately experiences are a form of bias.  It is not that 
+someone is doing this on purpose for the betterment or detriment of someone, 
+but it is how our brains are wired.  Physicians are not immune to this and 
+it can affect the ability to treat all patients and conditions equally or 
+appropriately\cite{PMC3797360}.  When set up correctly and fine-tuned over 
+time, data analytics can minimize biases.
+
+\subsection{Big Data as a Physician Assistant}
+What if each doctor had the collective knowledge of others?  That could make 
+for better and more accurate diagnoses around the globe.  A doctor in the 
+United States would have the knowledge of thousands of years of alternative 
+medicine which may only be taught in schools in the far east.  Not only is 
+it possible, but big data is making it happen today through technologies such 
+as IBM's Watson.
+
+\subsection{IBM's Watson Health}
+One of the challenges facing doctors today is the ability to keep up with 
+changes in healthcare.  Even doctors who specialize in a field cannot keep 
+up with the amount of information that is being published.  One estimate is 
+that 8,000 medical journal articles are published each 
+day\cite{HealthCareITNews}.  This makes medicine a good fit for big data.  
+Watson Health, IBM's name for their cognitive supercomputer focused on 
+healthcare, is able to ingest millions of pages of information in seconds.  
+This information becomes part of the core information Watson has at its 
+disposal as it assists clinicians by offering recommendations for them to 
+consider.  In this way Watson is not the final decision maker, but helps 
+doctors be better at what they do\cite{PMC4287097}.    
+
+While Watson is delegated to a physician's assistant currently, it may not 
+always be so.  In order to test how accurate it is, IBM tried it on 1,000 
+patients.  In this test Watson and the attending physician agreed 99 
+percent of the time.  In fact, in 30 percent of the cases Watson offered 
+pathways which the physician had not considered.  Armed with information 
+like this IBM believes that computer cognitive thinking will be mainstream 
+in the next ten years\cite{HealthCareITNews}.  Because of advances in other 
+technology areas have been progressing so quickly, it is hard to disagree 
+with them.  For instance, computers are now able to instantaneously make 
+decisions that seemed unimaginable just a few years ago which as lead to 
+the realization of autonomous driving vehicles.  The question may not be 
+the technology, but if people will accept a diagnosis from a computer 
+program such as Watson.
+
+Watson was also tested to see how examining a patient's entire genome would 
+be more beneficial than simply running a panel which focuses on a limited 
+number of areas most commonly known to be related to the cancer a patient 
+may be experiencing.  While the cost of and speed of sequencing a person's 
+genome has been reduced, there is still a lot of work to using this data 
+for a specific diagnosis and treatment plan. Both Watson and team from the 
+New York Genome Center analyzed a patient's genome.  Each of them was able 
+to identify gene mutations which would have pointed to a clinical trial or 
+drug which may have been a better match than the treatment the patient 
+received.  The difference being that it took the team of physicians 
+approximately 160 hours to come to their conclusion.  Watson provided its 
+results in 10 minutes\cite{IEEESpectrum}.  While not perfect, Watson adds 
+another tool doctors can leverage which would allow them to better diagnose 
+and treat patients.
+
+How does Watson do it?  It is actually very similar to how a human doctor 
+works.  The patient's symptoms and other information is made available to 
+Watson.  From there it deduces the relevant elements and leverages any 
+background information it may have such as patient and family history, 
+labs, x-rays, and other test results.  It then accesses other sources of 
+information it has accumulated over time: treatment guidelines, relevant 
+articles and studies, and potentially information from other patients 
+similar to this patient.  Watson develops hypotheses and runs them through 
+a process to test its hypotheses and provide a confidence score for each.  
+Watson then provides its recommended treatment options with its confidence 
+rating to the physician\cite{BusInsider}.
+
+One advantage of Watson, or any such system, is that every time it is used 
+that patient is getting all of its collective knowledge.  Today when a 
+patient see a physician they are diagnosed by that physician and maybe 
+one or two other people generally from the same office.  However as Watson 
+gets \emph{trained} by specialists in such fields as Oncology, every doctor 
+who uses Watson's assistance becomes as or more knowledgeable than the 
+collective group.  This means that each doctor is providing top of the 
+field care even if they are being seen nowhere near a facility that is 
+considered as the best world\cite{FortuneTrans}.  A patient in a country 
+not seen as having world-class healthcare can get diagnosed as if they were 
+at the Sloan-Kettering Cancer Center.  It also means that a patient who may 
+be seeing a specialist in one area may be diagnosed with an ailment outside 
+of their field.  This can save time in receiving the appropriate diagnosis 
+and subsequent treatment which gives patients the best chance for recovery.
+
+There are obstacles to making Watson available worldwide and that is the 
+ability to understand different languages.  Watson knows English, Brazilian 
+Portuguese, Japanese, and Spanish and is learning others.  As an example, 
+IBM, the Cleveland Clinic, and Mubadala are teaming up and are building a 
+hospital in the Middle East.  The Cleveland Clinic is already a user of 
+Watson Health and is expected to leverage that in the new facility as many 
+chronic conditions in the United States are present in the Middle East as 
+well.  To prepare for this, IBM is teaching Watson 
+Arabic\cite{FortuneArabic}.  As Watson learns more languages it will be able 
+to be leveraged in areas around the world which that language is spoken 
+allowing for those populations to advance their healthcare knowledge.
+
+Another advantage that Watson has over human physicians is that it never 
+forgets.  Even doctors who try to keep up with changes in healthcare, they 
+will never be able to remember information as precisely as Watson.  And 
+Watson is also consistent.  A single doctor may be mostly consistent, but 
+different doctors will provide different diagnoses given the same input.  
+Watson will not unless it is programmed differently or new knowledge is 
+ingested which can create a more accurate diagnosis.  It also does not 
+have bad days, get tired, and is available 24x7x365.  Watson's incremental 
+costs, the cost of using it for one or one million patients, is low.  IBM 
+has spent billions on it and is continuing to invest, but those costs will 
+be spread out as usage goes up thus making Watson cheaper over 
+time\cite{BusInsider}.
+
+\subsection{Implementing Big Data Diagnostic Systems}
+Leveraging such technologies can be implemented in various ways.  The 
+easiest way is to look at them as another tool in a physicians' tool chest.  
+Once fully implemented the inclusion of big data assisted technologies will 
+be seamless.  Clinical information is being collected digitally on an 
+increasing basis.  As vital signs, x-rays, diagnostic images, lab results, 
+and even discussions with the patients are collected digitally they will 
+become part of the patient's electronic health record and the overall 
+collective knowledge base.  Watson or other software could provide insight 
+to the physician.  It may be present a collection of diagnoses scored in 
+likelihood based on the evidence collected so far\cite{ForbesTrust}.  It 
+could provide recommendations for next steps or information which could 
+lead to a more complete recommendation.
+
+The idea behind such a system, Watson or any similar tool, is to make 
+physicians better through more accurate diagnosis.  It allows for the use 
+of big data without removing the human aspect of medicine.  This will 
+help to begin to include the big data and computer health diagnosis to 
+patients who would otherwise not be open to it.  For many people their 
+relationship with their doctor is personal.  They discuss items with their 
+doctor they do not discuss with anyone else.  They may not trust a 
+computer with their health\cite{ForbesTrust}.  A non-caring, non-breathing 
+inanimate object cannot be trusted with something so human.  In this 
+implementation a doctor would still be there providing the personal 
+interaction with the patient and thus providing them with the best care 
+including the collective knowledge of the system. 
+
+\subsection{Replacing Doctors for Routine Visits}
+Having a doctor meet with a patientially initiall may not always be 
+required.  The ability for big data to leverage healthcare data could 
+lead to helping alleviate the shortage of doctors and nurses in the 
+United States and around the world.  Worldwide there is an estimated 
+shortage of skilled health professionals of 17.4 million of which 2.6 
+million are doctors.  The problem does not get much better over time as 
+the estimate for 2030 is over 14 million\cite{WHOGHO}.  It takes a lot 
+of time and money for a student to achieve the level of knowledge to 
+fill these positions.  Unless the students are already in the pipeline 
+then there is not a good response to the problem.  People cannot switch 
+careers and be a doctor or a nurse in twelve months or some short time-frame.  
+
+Adding new big data doctors is simple.  It is mostly a hardware problem.  
+Buy the right equipment, install the right software, train the staff, and 
+Dr. Data can see patients.  Leveraging automated machines to take vital 
+signs will free up time for staff\cite{NextWeb} similar to how checking out 
+via automated tellers at the grocery store has reduced the number of 
+cashiers and baggers needed.  A physical office offering virtual doctor's 
+visits could be staffed with people trained on the technology more than 
+medical professionals.  They would be there to help make sure that people 
+are using the machines correctly and to wipe down equipment after a patient 
+has used it.  A nurse would be there in case certain patients are unable to 
+use the equipment and their information must be taken manually.  They 
+could also be there to take blood samples which would be processed by 
+automated machines and included in the patient's profile.  
+
+Automated diagnosis systems are in in use today in a limited basis.  In the 
+United Kingdom the National Health Service has approved the use of Your.MD 
+(an AI powered mobile app) for diagnosis.  When people are comfortable 
+using a technology like this it limits the number of more basic cases a 
+doctor has to see and allows them to concentrate on more difficult tasks.  
+Another tool, Ada, learns a user's history, provides an assessment, and adds 
+an option to contact an actual doctor if needed.  Babylon Health takes it 
+one step further by adding following ups with users to see how they are 
+doing and can even set up a video consultation with a live general 
+practitioner if needed\cite{NextWeb}. 
+
+\section{Limiting Epidemics}
+Incorporating big data analytics into the healthcare environment has the 
+ability to limit the spread of disease by taking current circumstances 
+outside of the immediate patient into account.  In a linked system data 
+from other local, regional, national, and global patients can leveraged.  
+Are there other patients presenting similar circumstances?  Did the other 
+patients provide more details or mention something slightly different?  
+Taking this into account may help to diagnose a specific person and to 
+identify an outbreak of something.  Is a disease spreading?  Did patients 
+come from a similar location such as a building?  By being able to 
+correlate this information immediately there is the potential to stop an 
+outbreak from spreading thus saving an untold number of patients from 
+pain and suffering and saving healthcare dollars by not having to treat 
+more patients.  Epidemics have an economic impact at many levels 
+including ``the micro (individual and household), meso (establishment, 
+village or city) and macro (national and 
+international)''\cite{WHOResponse}.
+
+\section{Insurance}
+The option of having fully automated doctors' visits could alter the 
+insurance market as well.  Health insurance is about numbers.  Actuaries 
+spend time estimating the health of the consumers they cover and many 
+other factors to determine what premium rates to set\cite{Actuary}.  
+Insurers make a profit by taking in more money than the costs to 
+administrate the plans and the cost of paying for claims combined.  
+To reduce the costs of claims they set predetermined prices for services 
+rendered by hospitals, physicians, and sometimes pharmacy companies.  
+The lower they can drive the cost of the claims they cover the less 
+they charge or the more money they make.  Charging less can result in 
+making more money as well as more people may choose to purchase 
+coverage from that insurer.
+
+By creating an options for autonomous doctor's visits or telemedicine 
+an insurance company could save money.  The more methods can be deployed 
+which can reduce overall healthcare costs, the less people will pay.  
+There are multiple ways in which this can be included to reduce health 
+insurance premiums, a high cost item for most people in the United States 
+and other countries.  Insurers can work with healthcare providers who 
+leverage this technology to create a reimbursement policy that is less 
+for services such as telemedicine\cite{MedicalEconomics}.  They could 
+also offer plans to potential customers which require basic treatments 
+to take place with autonomous or telemedicine options before they go 
+to a doctor's office.  This would offer an economic advantage to people 
+which in turn can not only lower costs, but help to increase the 
+adoption of new technologies.
+
+Such a system is not for everyone or every condition.  The idea is not 
+to replace all doctor's visits, but to allow those who are comfortable 
+to take advantage of lower cost coverage.  It will encourage younger 
+people to keep insurance if it is made more affordable.  Currently the 
+highest rate of not having insurance in the United States is when 
+someone can no longer be covered as part of their parents plan, starting 
+around the age of 25\cite{Census}. 
+
+\section{Portability}
+More importantly than lowering the cost of healthcare or making seeing 
+a doctor more convenient is the ability to make exceptional healthcare 
+available almost anywhere.  Big data using an automated doctor can have 
+an impact on under-served areas the like of which no one has ever seen.  
+Today there are people who do not have access to healthcare of any kind.  
+When they get sick they may not have a place to turn.  In developed 
+countries the number of patients per doctor is generally in the low 
+hundreds.  In poor, \emph{third world countries} the number of patients 
+per doctor is in the thousands or tens of thousands\cite{BigThink}.  
+There are people who try to help, such as Doctors Without Borders, by 
+making visits to these areas to provide some support but it does not 
+reach a level anywhere near what people in some countries have available 
+to them.  If each doctor could multiply their impact with technology 
+then the under-served would be helped more.  As technology advances so 
+people could be seen by experts without one being physically present 
+then even more people could be seen.
+
+\section{Patient Data Collection}
+\subsection{Actual Data vs. Circumstantial Insight}
+The more valid data which can be collected on patients the better big 
+data will be able to help improve treatment for people around the world.  
+The more accurate the data, the more accurate the analysis and results 
+will be.  Fortunately technology is helping in this area as well.  
+Many people around the world have access to devices which monitor 
+different aspects of our daily lives.  Hundreds of millions of people 
+around the world have purchased wearable devices, many of which can be 
+used to monitor activity and inactivity\cite{StatistaWearable}.  By the 
+end of next year it is expected that over one-third of people in the 
+world will own a smart phone which can also track this type of 
+activity\cite{StatistaPhones}.  While they are not seen as a medical 
+device, they can help to track activity which is useful for diagnosis 
+and treatment.  They are another input into the data about a patient 
+which can be used to more accurately gather information.  Today doctors 
+rely on a patient to answer questions about their level of activity.  
+With such a devices they can get a more accurate picture.  
+
+These devices are useful for more than just activity levels.  They 
+also provide insight into areas of people's lives they are not really 
+able to answer accurately such as how they sleep.  Many people may 
+sleep they sleep well or not so well, but in fact they are basing this 
+more on how they feel than how much rest and how good of rest they 
+get.  Activity trackers are able to track sleep patterns as well.  They 
+actively monitor your inactivity.  When used correctly a wearer pushes 
+a button to indicate they are going to sleep and when they get up in 
+the morning.  The monitor is then able to track how long it takes for 
+someone to get into a motionless/restful state.  It continues to 
+track them throughout the night recording if they move around, get up, 
+etc.  Getting good sleep is a key element of maintaining overall 
+health\cite{Health}.
+
+More advanced features of activity trackers include the ability to 
+monitor vital signs like heart rates.  They can be extremely important 
+to a diagnosis providing input similar to a mini stress test.  This 
+is especially true if a person exercises, such as during jogging.  The 
+device can monitor how far a person is moving and their associated 
+heart-rate.  By gathering this information, the data can be fed into 
+patient's profile when they visit a doctor (virtually or physically) 
+instead of having to wait for a patient to get a test done and receive 
+that feedback.  Shortening the time to collect data and accurately 
+analyze the patient can be the difference between life and death.
+
+One aspect of activity trackers which must be noted is their accuracy 
+and consistency.  This is something big data can help with as well.   
+Steps from person to person are not of consistent stride, tracker 
+accuracy changes from device to device, heart rate monitors vary, and 
+sleep are not be tracked similarly across all products and types of 
+activities\cite{AceFitness}.  Big data can help normalize this input 
+so that it can become a reliable input.  Analysis has been done on 
+different monitors to see how accurate they are.  In order to bring 
+them into health analysis more tests can be performed to get an 
+accurate picture of how the devices correlate to the actual distances 
+walked and level of sleep.
+
+Activity trackers are only the beginning.  \emph{Wearable technology} 
+is an expanding field which is enhancing the collection of passive 
+data.  Sensors are being built into clothing which track more accurately 
+and include more types of data\cite{DigitalTrends}.  This includes 
+information like breathing rate and muscle activity.  They not only 
+collect more types of data, but can wirelessly transmit the data via 
+Bluetooth\cite{PocketLint}.  This means they can create a more accurate 
+picture based on electronic data which can be used as an input.  The 
+more this type of technology becomes commonplace, the more data which 
+can be fed into a patient's health record and the collection of health 
+information.  
+
+\subsection{Follow-Up Visits}
+All of these devices also have the ability to not only be used in 
+diagnosis, but in the monitoring of treatment plans.  Is the patient 
+exercising as they say they are?  Is a medicine or other corrective 
+action helping them to lower their heart rate or get more restful 
+sleep?  It can also help to notify the patient or doctor when they 
+are exceeding a prescribed level of respiration or heart rate.  This 
+can trigger an alert for a patient if they are at risk or even that 
+they may need to seek treatment.  These levels will not only be set 
+based on standards, but patient specific information\cite{PubHealth}.  
+They can also take into account the environment the person is in.  
+Are they in a hot location or one with high allergy levels which 
+could negatively impact them?  This is what separates the treatment 
+plans of today with those of tomorrow.  Use the technology to more 
+accurately collect data on the patient, use it to create a diagnosis, 
+monitor the patient using the technology, feed that data back into 
+the patient's health record, and adjust as needed based on factual 
+information.
+
+Beyond the use of commercially available monitoring systems, there 
+are devices which collect data similar to the information collected 
+by a physician.  Simple systems such as a blood pressure monitors 
+are common.  Many other pieces of equipment can be prescribed by a 
+physician for home monitoring.  These systems not only collect 
+information, but are able to digitally transmit the data so that it 
+can be automatically analyzed with other sources of information.  
+A patient will get feedback without having to visit a 
+doctor\cite{PubHealth}.  This helps to close another gap in 
+healthcare which affect many people:  not following up with their 
+doctor.  Missing these visits can negatively impact the patient.  
+By easing the ability to be monitored, automating the data collection, 
+and instantly analyzing that data will lead to better overall 
+prognosis.
+
+Big data will also help to change people's habits.  By using the 
+data collected a picture of potential outcomes can be made for a 
+patient to contemplate.  Instead of generalities, patients will 
+receive advice based on their medical history, other patients like 
+them, treatment plans, and other inputs based on the variables 
+specific to the patient's circumstances.  It can show a patient how 
+they impact their recovery based on what they are doing or not 
+doing.  For instance if they miss taking their medicines on time, 
+do not lose weight, continue to smoke, or whatever other variables 
+they are in control of and how it affects their specific recovery 
+or health status.  Showing them in advance may give them the 
+motivation they need to follow the plan more closely.  Throughout 
+their treatment the model can be updated based on the patient’s 
+actual adherence to the plan.  This provides another feedback loop 
+for the patient to course correct their habits if they have not 
+been following it as outlined\cite{PubHealth}.
+
+Not only will big data help to diagnosis patients more accurately, 
+but it will also allow for the customization of treatment plans at 
+levels not available today.  Instead of relying on more general 
+treatment plans, patients will have their plans customized by their 
+specific set of circumstances.  Demographic information about the 
+patient will be used to compare to historical plans and outcomes 
+of patients most closely related to their characteristics.  This 
+includes not only the patients themselves, but the environments 
+they live in.  Pollution, weather, access to ongoing care, income 
+(the patient may have to work whereas a long period of rest would 
+be better) and other circumstances will be variables which may not 
+be controllable by the patient, but can be used to help treat them.  
+The plan will not necessarily be the best treatment course, not 
+everyone has the access to the best care or the ability to abide 
+by it, but will instead be the best plan for them and their 
+circumstances.  Each patient will be able to maximize their chances 
+of recovering or otherwise leading the most normal life possible. 
+
+\section{Access to Healthcare}
+It is estimated that over 400 million people do not have access to 
+basic healthcare around the world and others are forced into extreme 
+poverty because of what they pay for healthcare\cite{Who400}.  
+Through tools referred to as telemedicine, these numbers can be 
+lowered.  Telemedicine itself is the ability for people to get 
+evaluated, diagnosed, and treated while the physician is not located 
+where they are.  When combined with a mobile diagnostic unit a 
+patient can get similar care to someone who is seen at a 
+clinic\cite{WhoRemote}.  As advances in automated solutions such as 
+IBM Watson evolve, there could be a day when these remote services 
+are performed in very remote areas where communication with a 
+physician would be technically challenging.
+
+\section{Cost Savings}
+Another reason why big data will be helping with healthcare more and 
+more in the future is the most basic of reasons:  Economics.  
+Regardless of the country or political system, there is always an 
+economic element which must be addressed.  No country, no system has 
+an endless supply of any services or funds.   Because of that ideas 
+which make the most economic sense have a better chance to be 
+adopted.  The economics of automating healthcare with big data 
+analytics will reach a tipping point as time progresses.
+
+Simply put, healthcare is getting more and more expensive every year 
+and computing resources become cheaper every year.  Worldwide the per 
+capita expense of healthcare has risen from \$661 to \$1,059 (numbers 
+in Unites States Dollars or USD) in the last 10 
+years\cite{WoldBankPerCapita}. That is a 60.21\% increase in one 
+decade.  The average per capita may seem low to some but that is due 
+to it being worldwide number.  Many countries spend almost nothing 
+on healthcare per capita while others spend thousands.  For instance, 
+in 2004 Vietnam spent \$30 USD per capita and \$142 USD in 2014.  
+This is a 373\% increase, but in total dollars it is still a fraction 
+of \$6,369 (2004) and \$9,403 spent in the United 
+States\cite{WoldBankPerCapita}.  
+
+In contrast to this the cost of computing power has decreased year 
+over year.  Computer power is not as straightforward to analyze, but 
+cost trends are easily seen.  One way is to compare the cost using 
+a baseline year and showing other years as a percentage of the cost 
+of the baseline.  Using December of 1997 as a baseline (100) of cost 
+for computers, the cost of computers and peripherals in January 2004 
+had dropped to 16.2.  In other words, to get the same amount of 
+computer power in 2004 you only had to spend 16.2 cents for every 
+dollar spent in December of 1997.  By January of 2014 it had dropped 
+to 4.9.  Comparing the 2004 and 2014 numbers, the same ones used above 
+for healthcare spending, the cost of computing had been reduced by 
+69.75\%\cite{CompPrices}.  
+
+A specific component when it comes to big data is the cost of storage.  
+The decline in the cost of storage over time is staggering.  In the 
+early 1980's the cost of on gigabyte (GB) of storage was in the hundreds 
+of thousands of dollars.  Using early 2004 as our baseline the cost for 
+one GB of storage had dropped to just under \$2.00.  By 2014 the cost 
+had declined further to between three and four cents per GB\cite{MKomo}.  
+The speed at which the data can now be retrieved as compared to 2004 
+is like comparing the speed of light to the speed of sound.  Today's 
+storage units are that much faster.
+
+Using this data one can see that as we are able to leverage big data 
+solutions to provide better healthcare we can also begin to slow the 
+incline of healthcare costs and then lower the cost of healthcare 
+over time.  Adding a new virtual doctor will not take years of 
+schooling which can cost hundreds of thousands of dollars in some 
+countries.  It will be the cost of some piece of common technology 
+and a licensing fee for the software.  As with most everything 
+technology based, increasing the volume decreases the cost.  So as 
+more and more virtual doctors are brought online the cost of each 
+will decrease.  
+
+\section{Chronic Conditions}
+Chronic conditions are ones that ``are preventable, and frequently 
+manageable through early detection, improved diet, exercise, and 
+treatment therapy''\cite{FightChronicDisease}.  They are also very 
+expensive to manage and treat.  Worldwide in 2010 the total cost of 
+heart disease alone was \$863 billion dollars (USD) and is expected 
+to be \$1.44 trillion by 2030.  Between 2011 and 2031 the cost of the 
+top five chronic diseases (cancer, diabetes, mental illness, heart 
+disease, and respiratory disease) will cost \$47 trillion (USD) 
+globally\cite{Reuters}.  
+
+It is not only the economic impact of chronic diseases that make them 
+a target for big data analysis.  Chronic diseases reduce people's 
+quality of life.  This cannot be factored into simple terms such as 
+money.  Chronic diseases are the cause of 60 percent of deaths 
+worldwide\cite{WHOChronicDisease}.  In a 2002 study it was estimated 
+that 84 percent of deaths were due to chronic diseases in Europe and 
+Central Asia\cite{PRB}.  Chronic disease is so prevalent and impactful 
+to people's lives that it has been labeled as ``the most expensive, 
+fastest growing, and most intricate problem facing healthcare providers 
+in every nation on earth\cite{HITAnalyticsHow}.''  With data like this 
+it is easy to see why advances in chronic diseases is important.  The 
+question becomes how do fight them.  
+
+\subsection{Prevention}
+The best way to fight chronic disease is to never have one in the first 
+place.  The best way to reduce the number of people who get a chronic 
+condition is early intervention.  Big data analytics can be used to help 
+with population health management when it comes to chronic diseases.  
+That is by identifying those who are at a high risk of getting one of 
+these costly, harmful conditions\cite{HITAnalyticsHow}.  The ability 
+to leverage big data in prevention is a two part process.  First risk 
+factors which are modifiable must be identified and then interventions 
+need to be created which will have an impact on changing the 
+factors\cite{Liebertpub}.  
+
+Modifiable is the key word in the first aspect of using big data.  A key 
+to fighting many chronic conditions is for people to stop behaviors such 
+as smoking, to eat healthier, and to exercise more.  However, if it was 
+as easy as letting people know this then there would be a lot less chronic 
+disease already.  Big data can take many factors into account and help 
+to create a more precise message for a people with specific risk 
+elements.  For instance instead of telling a patient to eat more 
+nutritious foods, by leveraging elements of their specific health factors 
+a doctor can recommend more precise information such as asking them to 
+include a particular dietary nutrient\cite{Liebertpub}.  Big data can also 
+help with the timing of the message.  In a survey patients wanted more 
+information from analytics that would have warned them before they 
+developed a chronic condition\cite{HITAnalyticsChronic}.  When someone 
+is presented with more personalized information (they are on a path and 
+about to reach a point of no return) vs. general (a healthy lifestyle 
+may prevent you having issues years down the road) they are more 
+compelled to heed that information and act upon it.  
+
+Newer technologies outside of a clinical setting are helping to add to 
+the data available to analyze and care for patients.  Combining data 
+from a patient's activity monitor, fitness tracking website, or food logs 
+into their plan helps to create a feedback cycle for the healthcare 
+provider.  Many applications track food by scanning the USB code from 
+the package.  Making it simple helps to get people to do things.  The 
+easier it is, the more likely they are to do it.  Taking this data and 
+combining it with clinical data such as blood labs and vital statistics 
+can show a patient how they are directly impacting their health in a 
+positive or negative manner.  It changes the conversation from more of 
+a public service announcement general message to one unique to them.
+
+A special sub-section of patients are very high-cost patients.  In the 
+United States there are roughly five percent of patients who account 
+for almost 50 percent of healthcare spending\cite{HealthAffairs}.  
+Identifying these patients and creating intervention plans that work 
+can have an enormous impact on their lives and the cost of healthcare 
+overall.  Patients with seemingly similar risk factors may have very 
+different prognoses.  Obvious factors such as age, weight, sex, and 
+vital statistics may be the same.  In order for big data to help 
+identify the five percent more data is needed.  Including mental health 
+data, genetic information, socioeconomic, martial status, living 
+conditions, and even cultural factors into the analysis will allow for 
+better predictions and better ways to intervene which will lead to 
+better outcomes\cite{HealthAffairs}. 
+
+\subsection{Management}
+Even with the best of preventive measures there will still be too many 
+people with chronic conditions for years and decades to come.  
+Approximately 25 percent of people with chronic conditions have 
+restrictions in what tasks they can perform for themselves, at work, 
+or at school\cite{ScalableHealth}.  Because of this big data must also 
+be leveraged to help manage those with chronic conditions.  Managing 
+it is not only based on cost, but helping them to live a better quality 
+of life with less trips to the doctors and less admissions to a 
+hospital.  Data analytics can help to customize treatment plans to the 
+circumstances of each patient.  It can see patterns in patient's data 
+and help to determine better follow up schedules.  This could mean the 
+difference between a visit with their doctor or a costly 
+hospitalization\cite{MedCity}.
+
+Part of the solution for using big data to help tackle chronic 
+conditions is leveraging new sources of information from technologies 
+such as wearables.  As mentioned earlier they allow for real-time 
+data to be collected, combined with other sources of information 
+including that of other patients, and provide better treatment plans 
+for patients.  Historically the medical profession had to rely on 
+subjective input from patients when they came in for a visit.  How 
+often were they active, did they log information like their heart 
+rate and blood pressure when they should have.  With some wearables 
+all this information and more is gathered in real-time and can 
+trigger an alert to a care management 
+professional\cite{ScalableHealth}.  This means that changes can be 
+made when they are needed and the patient can get immediate 
+attention, not days or weeks later.
+
+Another issue with chronic care for providers is that patients may 
+have multiple conditions.  They may be overweight, have diabetes, 
+and hypertension.  This leads a patient to having multiple doctors 
+each working on a specific condition, but no real coordination 
+across the diseases.  A treatment for one condition may have a 
+negative impact on the patient because of treatment or drugs 
+prescribed for another condition.  And this situation is not unique 
+as there a many patients suffering from the same conditions 
+simultaneously.  Big data analytics can bridge this gap.  By combining 
+data from multiple sources, patients, and treatments physicians can 
+create a customized treatment plan for a patient to combat all three 
+illnesses in the best manner without adverse 
+interactions\cite{HealthCatalyst}.
+
+The result of this is that big data can help people see that 
+treatments are tailored to them and are making a difference.  Data 
+analytics allows for patient-centric care, not disease-centric care.  
+Patient managers would work with patients providing details on their 
+plan, their results, and will be able to show patients how the care 
+plan affects their quality of life.  It can help to create a 
+healthcare environment ``where patients are not only engaged in time 
+but see improved health results at affordable costs''\cite{Innovaccer}.
+
+\section{Genomics (Personalized Healthcare)}
+The field of Genomics is investigating how healthcare can be more 
+personal.  How diagnosis and treatment plans will be based on a 
+specific person instead of how the factors or ailment is normally 
+seen and treated in the general population.  This is essential work 
+because in the United States up to 47 percent of the cost of 
+healthcare is spent on interventions that do not provide any value.  
+While the actual percentage may vary in other countries, this is a 
+worldwide problem\cite{PMC4287097}.  Any easy way to understand 
+the difference is over the counter medicine.  Generally speaking 
+the instructions on a bottle are broken down into children and 
+adults.  Following the directions adults will take the same amount 
+of medicine regardless of their age, weight, or overall health. 
+
+Genomics aims to make medicine very specific to an individual by 
+breaking down each person's genome.  This is only possible through 
+big data as a single person's genome produces a lot of data because 
+it has up to 25,000 genes with three million base pairs.  One human 
+genome can produce up to 100 gigabytes of data\cite{OReilly}.  And 
+the information from one individual is not what is required for 
+personalized health.  It requires genomes from many individuals.  
+The more data available, the better the analysis can be on 
+similarities between people and how they may react to certain 
+treatments.  This multiplies 100 gigabytes by thousands, then 
+millions, then hundreds of millions.
+
+Through advances in technology such analysis is possible.  In 2003 
+the first human genome was sequenced.  It was only after 13 years 
+and approximately \$3 billion dollars.  By 2015 the same work can 
+be done in a few hours at a cost of just over 
+\$1,000\cite{HITAnalyticsGenomics}.  This means that more and more 
+people can have their genomes sequenced and used for analysis and 
+personalized diagnosis and treatment of diseases.  As more and 
+more genomes are collected and analyzed treatment can be based on 
+their personal genome and their family traits through family 
+based analysis.  This analysis lets doctors see how people may 
+have inherited a propensity to be susceptible to certain diseases 
+based on mutations in their genomes.  In addition, through 
+population based analysis environmental and cultural factors can 
+be included.  It is estimated that by 2025 over 100 million genomes 
+could be sequenced\cite{PMC5343946}.  Analyzing the details of 
+the building blocks of so many individuals will be an a big data 
+challenge which can have an enormous impact on healthcare.
+
+\section{Drug Discovery}
+Discovering new drugs which can help us live a better life is 
+something like finding a needle in a haystack.  Large libraries 
+of molecules have to be examined ``against millions of data points 
+spanning chemical, biological, and clinical 
+databases''\cite{MITSloan}.  This is done looking for relationships 
+between diseases and drugs to see if a particular drug could be 
+used to treat the disease.  While the process is not new, this work 
+is the basis of many new drug discoveries, the ability of current 
+big data techniques speeds up the process allowing for drugs to be 
+discovered more quickly\cite{MITSloan}.
+
+One of the reasons for it being so complicated goes back to the 
+discussion of the human genome:  each person is a unique individual.  
+If you have seen a commercial or advertisement for a prescription 
+drug there is always a list, sometimes a very long list, of possible 
+side effects.  These are adverse impacts which can range from minor 
+annoyances to death.  Part of the challenge of drug discovery is 
+attempting to identify and quantify the impact a drug may have on 
+people.  To speed this process healthcare big data has developed 
+solutions such as array-based technologies which are purpose built 
+to combinatorial problems.  This lets researchers find patterns in 
+the data more quickly, speeding up the overall 
+process\cite{ClinicalLeader}.
+
+Once a drug is thought to have a potential positive use it must go 
+through a testing phase before it is approved for use.  This can be 
+long process which has successes and failures.  Big data is being 
+used for ``the improvement of clinical trial designs (e.g., endpoints, 
+inclusion/exclusion criteria, etc.)''\cite{GeneticEpid}.  This not 
+only allows for potentially a quicker time to market, and thus the 
+ability help people sooner, but a cost savings without paying for 
+trials which do not produce viable results.
+
+\section{Incentives for Adoption}
+In the end many of the advances will only be possible if people accept 
+them.  So how can this number be influenced?  The most logical way to 
+do so is to make the adoption of these advances financially 
+beneficial.  People are more willing to take a chance when they can 
+see a hard benefit.  Insurance premiums can help to drive this and 
+provide an immediate benefit.  Plans could be offered in which a 
+person's primary care is provided by a big data doctor.  People would 
+have to consent to having their information stored electronically and 
+compared against the data sets.  Visits to physical doctors including 
+for second opinions would be limited.  They could even have different 
+reimbursement models similar to preventive tests.  Most insurance 
+today covers preventive services at 100 percent and are not subject 
+to a deductible.  Electronic visits could be treated similarly.  They 
+could be covered at 100 percent, or some number higher than regular 
+doctors visits, and may or may not be subject to a deductible.  
+Leveraging these types of incentives will help to promote the use of 
+advanced analytics in the healthcare field.  As usage grows so will 
+the basis of data available to analyze and the ability to create 
+better analysis models.
+
+Another incentive for leveraging big data analytics by physicians is 
+being led by the governments and private insurance.  Instead of paying 
+for services as they are performed, alternate payment models are 
+being explored.  For instance, in the United States the Centers for 
+Medicaid and Medicare services is creating Alternate Payment Models 
+to stimulate high-quality, cost-efficient care\cite{CMSAPM}.  
+Physicians are able to earn more income and profit by achieving 
+better outcomes.  They will be willing to invest in computer analysis 
+which will help them to diagnose and treat patients better.  The 
+financial incentive will drive change in providers' habits which 
+will benefit the healthcare big data analytics and patients.  
+
+\section{Drawbacks}
+Leveraging big data innovations does not come without hurdles.  One 
+of the first is that people are generally slow or not open to change.  
+The more personal the need for change, the less open they are.  
+Organizations (hospitals, physician groups) are no different.  Part of 
+being an individual is making choices based of what information you can 
+gather and leveraging your ability to make a determination.  This is 
+part of what makes each person unique.  It is also how we learn.  The 
+more we become dependent on machines, the less we store in our own 
+brains and we stop ``building the networks in our brains to solve a 
+whole host of problems.\cite{PsychologyToday}''  As those in the 
+healthcare field rely more on technology to diagnosis and treat patients, 
+the less human innovation may leveraged which can have a detrimental 
+effect over time.  
+
+A major complication in big data analytics in any setting is the quality 
+of data.  The term emphasis garbage in, garbage out has probably been 
+applied to computer systems since the beginning.  There are techniques 
+used to combat this, but when it comes to people's health it is a bit 
+more important.  A portion of the healthcare data used as a base for 
+analysis comes from existing diagnosis and treatment performed by humans.  
+In looking at second opinions for patients, it was estimated that 
+``10\% to 62\% of second opinions yield a major change in the diagnosis, 
+treatment, or prognosis''\cite{MayoClinic}.  Extrapolating this number 
+to the base of information in big data for analysis means that a 
+significant portion of the data would be different if a patient simply 
+went to a different doctor.
+
+Aside from the data itself, there is the potential for the algorithms 
+behind big data analysis to be biased or having discrimination built 
+into them.  There has been a lot of talk about a lack of diversity in 
+the technology world, especially with companies in Silicon Valley.  
+This lack of diversity could become manifested into the analytics behind 
+healthcare analytics.  Different cultures and different races have some 
+unique healthcare challenges.  With a lack of diversification in key 
+jobs the developers of healthcare systems could under-serve large 
+portions of the world's population due to a lack of understanding of 
+how certain diseases affect their everyday lives.  The United States 
+Federal Trade Commission has asked companies in general to look at 
+how representative their big data is and whether their models have 
+built in biases\cite{TheRegister}.  The fact that healthcare around 
+the world varies based economic factors makes it easy to understand 
+how the data itself can be discriminatory.  More wealthy people will 
+be proportionally more represented than the poor thus skewing the data 
+toward conditions afflicting the wealthy.  
+
+While big data will help to diagnose patients and create treatment 
+plans, it does not come without it drawbacks.  One of the biggest may 
+be innovation.  Part of being human is the ability to think of what 
+has not already been done before.  As algorithms and data analysis 
+based on the historical variables begin to become more commonplace, 
+there will be a reduction in the human factor of the medical 
+profession.  When faced with what can seem like a dire situation, the 
+human mind can think of new options not previously discovered.  
+Trying something which may not seem to have an impact on the surface, 
+but something completely unrelated to any prior decision made can lead 
+to new alternatives.  What will a computer do with a patient when it 
+does not see any hope?  A human physician may opt to take a risk.  
+It is a well-informed risk with the patient knowing that there are no 
+guarantees.  It is easy to assume when an automated course of action 
+without a substantial chance of a positive outcome is encountered that 
+a physician would be able to intervene.  This is true for a while, 
+but as more and more of medicine is turned over to computer diagnosis 
+and treatments the pool of capable physicians will shrink.  With less 
+people involved the less chance there is that the truly gifted 
+individuals who make strides in the field will even decide to enter 
+the field in the first place.  In other words, these individuals may 
+decide on a different career path and their discoveries would be left 
+undiscovered.  
+
+\section{Conclusions}
+Big data is an expanding science in many fields.  The ability to 
+digitize, collect, store, and analyze data has never been more than 
+it is today.  The type of information that can be used in data analysis 
+is expanding every day as well.  Images, videos, and sound are all 
+part of the inputs into big data.  Computers are now able to leverage 
+natural language processing to make inputs that much easier to collect.  
+As this field continues to grow, the ability to leverage it in 
+improving healthcare around the world will grow as well.
+
+We are on the edge of a shift in healthcare for the betterment of 
+humankind.  Advances will not be limited to one nation or one class of 
+people.  While healthcare may not be universal in its application, not 
+every person will be able to access the same level of care, there will 
+be benefits which can eventually help all people.  A mobile unit which 
+can be taken to almost any part of the planet will be able to have the 
+knowledge better than most doctors practicing today.  Doctors will have 
+access to new drugs, diagnostic information, and treatment plans than 
+they ever had before.  They will be able to leverage new advances in 
+medicine without having to read as many publications as they can.  They 
+will have a tool that reads and learns for them and provides that 
+insight on case by case basis.
+
+Through the use of data analysis of sources of data which did not exist 
+a decade or so ago, we will be able to identify when a disease is 
+starting to spread and react, thus limiting its impact.  Because of 
+technology people will be spared from suffering and they will never even 
+know it.  By understanding the human genome people who may be more 
+susceptible certain diseases can be treated before they take hold.  
+Babies will have their genome sequenced while they are still in their 
+mother's womb.  This one aspect of the power of big data, the ability 
+to process and understand a human genome, may be the single largest 
+breakthrough in healthcare.  It can provide insight into how each person 
+individually reacts to the world around them and what science can do to 
+make that interaction better.  What science can do to help each person 
+avoid potential chronic conditions which are not only financially 
+costly, but that severely reduce their quality of life or end their 
+life.  Through advances in big data we will not only live longer, but 
+live better.
+
+\begin{acks}
+
+  The author would like to thank Dr. Gregor von Laszewski for his 
+  support throughout this process.  By offering an environment in which 
+  students were able to explore areas in big data which interested them, 
+  we were all able to further our knowledge individually and collectively.  
+  This project is similar to big data itself.  It brought together 
+  various thoughts which could be considered data points into the 
+  collection of the class.  With access open to all, and potentially 
+  future classes, the collection of projects becomes a big data collection 
+  unto itself.
+
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+
+
+
+\end{document}
+
 
