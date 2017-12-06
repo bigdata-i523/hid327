@@ -31,6 +31,7 @@
 * 11/20/17 Attended 6PM class.
 * 11/27/17 Attended 6PM class.
 * 11/29/17 Attended 6PM class.
+* 12/04/17 Attended 6PM class.
 
 # Theory
 
@@ -87,6 +88,6 @@
 * 11/30/17 Continued to write on project.
 * 12/01/17 Continued to write on project.
 * 12/02/17 Continued to write on project.  Submitted project for preliminary review.
-
-
+* 12/04/17 Added final paragraph to project and cleaned up .bib file.
+* 12/05/17 Marked project as 100% in readme.yml file.  It is ready for grading.
 
