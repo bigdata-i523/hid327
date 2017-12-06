@@ -89,5 +89,5 @@
 * 12/01/17 Continued to write on project.
 * 12/02/17 Continued to write on project.  Submitted project for preliminary review.
 * 12/04/17 Added final paragraph to project and cleaned up .bib file.
-* 12/05/17 Marked project as 100% in readme.yml file.  It is ready for grading.
+* 12/05/17 Marked project as 100% in README.yml file.  It is ready for grading.
 
