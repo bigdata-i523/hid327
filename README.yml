@@ -21,7 +21,6 @@ paper1:
     title: >
         Using Big Data to minimize Fraud, Waste, and Abuse (FWA) in
         United States Healthcare
-    type: latex
     url: https://github.com/bigdata-i523/hid327/paper1/report.pdf
 paper2:
     review: Nov 6 2017
@@ -39,7 +38,6 @@ paper2:
         - 327
     status: 100%  11/06/17
     title: The Impact of Self-Driving Cars on the Economy
-    type: latex
     url: https://github.com/bigdata-i523/hid327/paper2/report.tex
 project:
     abstract: >
